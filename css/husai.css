@@ -1,0 +1,62 @@
+/* part1 */
+#plano :hover{
+    background: #93278F;
+}
+
+.girl{
+background: url(../img/husai/home_page/girl.png) no-repeat;
+background-size: cover;
+background-position: center;
+flex-wrap: wrap;
+}
+/* .girl_img{
+    height: 435px;
+    width: 430px;
+} */
+
+.btn-husai{
+background-color:#93278F;
+color:#fff;
+border-radius:20px;
+border: 2px solid #F0E738;
+padding: 10px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.btn-husai:hover{
+    background-color: #F0E738;
+    color: #93278F;
+    text-decoration: none;
+}
+
+.margem-clientes{
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.barra-top{
+    border-top: 1px solid #c1c1c1;
+    padding-top: 30px;
+}
+
+.btn-ver-planos{
+    background-color: #93278F;
+    color: #fff;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+}
+
+.img-hospedagem{
+    width: inherit;
+    height: inherit;
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+}
+
+.box-img-hospedagem{
+    width: 100px;
+    height: 100px;
+}
+

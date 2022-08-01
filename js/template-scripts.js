@@ -25,20 +25,20 @@
 
 	
 	// header resize//
-	(function () {
-	var coodivheadertest = document.getElementById("coodiv-header");
-    if(coodivheadertest){
-	function resize()
-    {
-    var heights = window.innerHeight;
-    document.getElementById("coodiv-header").style.height = heights + "px";
-    }
-    resize();
-    window.onresize = function() {
-    resize();
-    }; 
-	}
-	}());
+	// (function () {
+	// var coodivheadertest = document.getElementById("coodiv-header");
+    // if(coodivheadertest){
+	// function resize()
+    // {
+    // var heights = window.innerHeight;
+    // document.getElementById("coodiv-header").style.height = heights + "px";
+    // }
+    // resize();
+    // window.onresize = function() {
+    // resize();
+    // }; 
+	// }
+	// }());
 	
 	// page loeader //	
 	(function () {
