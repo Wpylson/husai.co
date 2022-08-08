@@ -1030,7 +1030,7 @@ to{-webkit-transform:rotate(360deg) translate(-10px) rotate(-360deg);transform:r
 @keyframes floating{from{-webkit-transform:rotate(0deg) translate(-10px) rotate(0deg);transform:rotate(0deg) translate(-10px) rotate(0deg);}
 to{-webkit-transform:rotate(360deg) translate(-10px) rotate(-360deg);transform:rotate(360deg) translate(-10px) rotate(-360deg);}
 }
-.auth-content .form-control{background:#ad9ff9;border:0;color:#fff;font-size:13px;}
+.auth-content .form-control{background:#fff;border:0;color:#333;font-size:13px;border-radius: 15px;}
 .auth-wrapper .auth-icon{font-size:30px;margin-top:40px;}
 .auth-wrapper .auth-icon:before{background:linear-gradient(-135deg, #1de9b6 0%, #1dc4e9 100%);background-clip:text;text-fill-color:transparent;-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
 .shadow-2{-webkit-box-shadow:0 10px 18px 0 rgba(62, 57, 107, 0.2);box-shadow:0 10px 18px 0 rgba(62, 57, 107, 0.2);}
@@ -1047,7 +1047,7 @@ p.text-white-muted{font-size:13px;color:#eeedf3;}
 .checkbox-custom input[type=checkbox]:checked + .cr:before{background:#1dd5d2;border-color:#1dd5d2;color:#ffffff;}
 .checkbox-custom input[type=checkbox] + .cr:before{content:"\f0c8";width:22px;height:22px;display:inline-block;margin-right:10px;border:2px solid #e9eaec;border-radius:3px;font-size:15px;font-family:"Font Awesome 5 Free";font-weight:900;line-height:19px;vertical-align:bottom;text-align:center;background:#ffffff;color:transparent;cursor:pointer;-webkit-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;}
 .checkbox-custom input[type=checkbox] + .cr:after{content:"";width:22.5px;height:22.5px;display:inline-block;margin-right:10px;border:2px solid #e9eaec;border-radius:2px;vertical-align:bottom;text-align:center;background:transparent;cursor:pointer;-webkit-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;position:absolute;top:8.5px;left:3px;}
-.auth-login-title{margin:0;font-size:26px;font-weight:600;font-family:'Poppins', sans-serif;letter-spacing:0.5px;margin-bottom:15px;text-transform:capitalize;color:#fff;}
+.auth-login-title{margin:0;font-size:22px;font-weight:300;font-family:'Poppins', sans-serif;letter-spacing:0.5px;margin-bottom:15px;color:#F0E738;text-transform: uppercase;}
 .auth-login-title span{color:#e9e8ef;font-size:14px;font-weight:300;line-height:23px;display:block;margin-top:10px;letter-spacing:0;}
 .auth-content-logo-header{display:block;text-align:center;margin-bottom:60px;}
 .auth-content-logo-header img{width:110px;opacity:0.8;}

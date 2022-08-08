@@ -10,10 +10,12 @@
     flex-wrap: wrap;
 }
 
-/* .girl_img{
-    height: 435px;
-    width: 430px;
-} */
+.altura-50{
+    min-height: 50px;
+}
+.altura-20{
+    min-height: 20px;
+}
 
 .btn-husai {
     background-color: #93278F;
@@ -93,4 +95,18 @@
 .ok-circle-icon{
     color: #93278F;
     font-size: 16px;
+}
+
+.btn-entrar{
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-color: #F0E738;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.btn-entrar:hover{
+    color: #e1e1eb;
 }
