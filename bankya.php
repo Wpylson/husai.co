@@ -14,6 +14,8 @@ include("db.php");
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- main css file -->
     <link href="css/main.min.css" rel="stylesheet">
+        
+    <link rel="stylesheet" href="css/husai.css">
 
 </head>
 
@@ -30,13 +32,15 @@ include("db.php");
     </div>
     <!-- end preloader -->
 
-    <div id="coodiv-header" class="subpages-header-min moon-edition">
+    <div id="coodiv-header" class="d-flex mx-auto flex-column subpages-header moon-edition">
         <div class="bg_overlay_header">
-		<div id="particles-bg"></div>
+		<div id="particles-bg" style="background: #93278F;"></div>
         <img src="fundo.png" alt="img-bg">
+		<span class="header-shapes shape-02"></span>
+		<span class="header-shapes shape-03"></span>
         </div>
         <!-- Fixed navbar -->
-         <nav id="coodiv-navbar-header" class="navbar navbar-expand-md " style="background: #93278F;">
+       <nav id="coodiv-navbar-header" class="navbar navbar-expand-md " style="background: #93278F;">
             <div class="container main-header-coodiv-s">
                 <a class="navbar-brand" href="index.php">
                 <img class="w-logo" src="logo2.png" alt="" />
@@ -106,8 +110,12 @@ include("db.php");
                         <li class="nav-item">
                             <a class="nav-link" href="domains.php">Domínios</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="nossoproduto.php">Nossos Produtos</a>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link" href="#" role="button" id="header-help-drop-down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nossos Produtos<span class="sr-only">(current)</span></a>
+                            <ul class="dropdown-menu coodiv-dropdown-header" aria-labelledby="header-help-drop-down">
+                                <li><a class="dropdown-item" href="bankya.php">Bankya</a></li>
+                                <li><a class="dropdown-item" href="enter.php">Enter</a></li>
+                            </ul>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -134,7 +142,7 @@ include("db.php");
                 <ul class="header-user-info-coodiv">
                     <?php 
                     if (isset($_COOKIE["cliente"])) {
-                           $cliente = $_COOKIE["cliente"];
+                          $cliente = $_COOKIE["cliente"];
                         $selCart = mysqli_query($conn,"SELECT * FROM carrinho WHERE usuario='$cliente' AND estado='nao' ");
                           ?>
                            <li onclick="location.href='Bankya/'"><a  href="ordernextvery.php" class="btn btn-sm" style="background: #F0E738; border: 1px solid #F0E738; color: #93278F;"><i class="fa fa-shopping-cart"></i> Carrinho <b>(<?php echo mysqli_num_rows($selCart); ?>)</b></a> 
@@ -170,12 +178,61 @@ include("db.php");
                 </ul>
             </div>
         </nav>
+        <div class="mt-auto header-top-height"></div>
+        <main class="container mb-auto">
+            <div class="row">
+                <div class="col-md-12 d-flex mx-auto flex-column">
+                    <div class="mb-auto"></div>
+                    <h3 class="mt-3 main-header-text-title" style="text-align: left;"><span style="color: #f5f5f5;"></span>BANKYA</h3>
+                </div>
+                <div class="col-md-12">
+                    <div class="breadcrumb-hosting-pages row" style="height: 150px;">
+                        <a class="col-md-6 active" href="bankya.php">
+                            <img src="img/husai/clientes/banky.png" alt="" />
+                            <!-- <span class="sub-breadcrumb-host-title">hospedagem web</span> -->
+                        </a>
+
+                        <a class="col-md-6 " href="enter.php">
+                            <img src="img/husai/clientes/enter.png" alt="" />
+                            <!-- <span class="sub-breadcrumb-host-title">servidores</span> -->
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <div class="mt-auto"></div>
     </div>
 
-    <section>
-        <br><br>
+    <section class="padding-zero padding-100-0-0-100" style="background: #93278F;">
         <div class="container">
-       
+            <div class="row justify-content-between" style="padding: 20px;background: #fff;">
+            <div class="col-md-4 side-text-right-container side-text-plan-hosting">
+                   <p class="chourico">Vantagens de usar o <strong>Bankya</strong></p>
+
+                    <ul class="web-hosting-options">
+                        <li> <p class="f-size16"><em class="fa fa-check-circle ok-circle-icon" style="margin-right:5px;"></em>Marketplace Escalável</p> </li>
+                        <li> <p class="f-size16"><em class="fa fa-check-circle ok-circle-icon" style="margin-right:5px;"></em>Injectável</p> </li>
+                        <li> <p class="f-size16"><em class="fa fa-check-circle ok-circle-icon" style="margin-right:5px;"></em>100% Seguro</p></li>
+                        <li> <p class="f-size16"><em class="fa fa-check-circle ok-circle-icon" style="margin-right:5px;"></em>Rápido</p></li>
+                    </ul>
+
+                </div>
+                <div class="col-md-8 side-text-right-container side-text-plan-hosting" style="border-left: 1px solid #d1d1d1 ;">
+                    <h2 class="side-text-right-title f-size25" style="color:#93278F;text-transform: uppercase;">O que é o <strong>Bankya?</strong></h2>
+                    <p class="side-text-left-text f-size16" style="text-align: justify;">
+                       O <strong>Bankya</strong> é um marketplace de serviços da Husai, que tem como objectivo
+                       conectar quem precisa, com quem sabe fazer, ao trabalhar com esse aplicativo, voçê amplia
+                       a tua rede de novos cleientes, isto porque <strong>Bankya</strong> cria conexõe entre os prestadores de serviços qualificados,
+                       com aquele que buscamos e necessitam dos seus préstimos.
+                    </p>
+                    <div id="" class="mr-tp-50 custom-change">
+                    <a class="log-btn btn-download" href="#" >Download <em class="fa fa-angle-right" style="margin-left:5px"></em></a>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </section>
 
@@ -203,9 +260,21 @@ include("db.php");
         <div class="container">
             <div class="row">
                 <div class="col-md-9 quiq-links-footer">
-                    <h5 class="quiq-links-footer-title">Links Rápidos</h5>
+                  
                     <div class="row">
-                        <ul class="col-md-6 quiq-links-footer-ul">
+                        <div class="col-md-3">
+                            <h5 class="quiq-links-footer-title">Evolua!!</h5>
+                            <p style="text-align:left;">Transforme a sua empresa por meio 
+                        da tecnologia e aumente os seus resultados.</p>
+                        <div class="mb-auto">
+                        <a class="log-btn btn-husai" href="#" >Ver todos os planos</a>
+                    </div>
+                   
+                        </div>
+                       
+                       <div class="col-md-4">
+                       <h5 class="quiq-links-footer-title margem-top-lista-link"><em class="fa fa-angle-right" style="margin-right:5px"></em>Links Rápidos</h5>
+                       <ul class="quiq-links-footer-ul">
                             <li><a href="#" style="color: #f5f5f5;">anúncios da nossa empresa</a></li>
                             <li><a href="#" style="color: #f5f5f5;">Base de conhecimento</a></li>
                             <li><a href="#" style="color: #f5f5f5;">Transferências</a></li>
@@ -216,8 +285,10 @@ include("db.php");
                             <li><a href="#" style="color: #f5f5f5;">Produtos de software</a></li>
                             <li><a href="#" style="color: #f5f5f5;">Hospedagem Dedicada</a></li>
                         </ul>
+                       </div>
 
-                        <ul class="col-md-6 quiq-links-footer-ul">
+                       <div class="col-md-4">
+                       <ul class="quiq-links-footer-ul">
                             <li><a href="#" style="color: #f5f5f5;">Entre em contato conosco</a></li>
                             <li><a href="#" style="color: #f5f5f5;">Status da rede</a></li>
                             <li><a href="#" style="color: #f5f5f5;">Esqueceu sua senha?</a></li>
@@ -228,16 +299,17 @@ include("db.php");
                             <li><a href="#" style="color: #f5f5f5;">Área do cliente</a></li>
                             <li><a href="#" style="color: #f5f5f5;">gerencie sua conta</a></li>
                         </ul>
+                       </div>
 
                     </div>
                 </div>
 
                 <div class="col-md-3">
-                    <h5 class="quiq-links-footer-title">Método de Pagamento</h5>
+                    <!-- <h5 class="quiq-links-footer-title">Método de Pagamento</h5>
                     <p class="secure-img-footer-area">
                         <img src="bankya2.png" alt="" width="100" />
                         <span>isso é apenas por motivo de demonstração</span>
-                    </p>
+                    </p> -->
 
                     <div class="footer-contact-method">
                         <a href="#">
@@ -255,16 +327,17 @@ include("db.php");
                 </div>
             </div>
 
-            <div class="mr-tp-40 row justify-content-between footer-area-under">
+            <div class="mr-tp-40 row justify-content-between footer-area-under barra-top">
                 <div class="col-md-4">
                     <a href="#"><img class="footer-logo-blue" src="logo.png" alt="" /></a>
+                    <div class="final-footer-area-text" style="color: #f5f5f5;">
+                    © Copyright 2022 Husai , Todos os direitos reservados
+                </div>
                     <div class="footer-social-icons">
-                        <a href="#" style="background: #F0E738; color: #93278F;"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" style="background: #F0E738; color: #93278F;"><i class="fab fa-twitter"></i></a>
-                        <a href="#" style="background: #F0E738; color: #93278F;"><i class="fab fa-instagram"></i></a>
-                        <a href="#" style="background: #F0E738; color: #93278F;"><i class="fab fa-youtube"></i></a>
-                        <a href="#" style="background: #F0E738; color: #93278F;"><i class="fab fa-dribbble"></i></a>
-                        <a href="#" style="background: #F0E738; color: #93278F;"><i class="fab fa-google"></i></a>
+                        <a href="#" style="background: #F0E738; color: #93278F;"><i class="fab fa-facebook-f" style="line-height:2"></i></a>
+                        <a href="#" style="background: #F0E738; color: #93278F;"><i class="fab fa-twitter"  style="line-height:2"></i></a>
+                        <a href="#" style="background: #F0E738; color: #93278F;"><i class="fab fa-instagram"  style="line-height:2"></i></a>
+                        <a href="#" style="background: #F0E738; color: #93278F;"><i class="fab fa-youtube"  style="line-height:2"></i></a>
                     </div>
                 </div>
 
@@ -281,14 +354,12 @@ include("db.php");
 
             </div>
 
-            <div class="row justify-content-between final-footer-area mr-tp-40">
-                <div class="final-footer-area-text" style="color: #f5f5f5;">
-                    © Copyright 2022 Husai , Todos os direitos reservados
-                </div>
+            <!-- <div class="row justify-content-between final-footer-area mr-tp-40">
+               
 
                 <div class="footer-lang-changer">
                     <div class="lang-changer-drop-up">
-                        <a class="menu-btn-changer" role="button" id="dropupmenulagchanger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" style="color: #f5f5f5;"><i class="fas fa-globe-africa"></i> Português</a>
+                        <a class="menu-btn-changer" role="button" id="dropupmenulagchanger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" style="color: #f5f5f5;"><i class="fas fa-globe-africa"></i> Português/Angola</a>
                         <div class="dropdown-menu dropupmenulagchanger" aria-labelledby="dropupmenulagchanger">
                         </div>
                     </div>
@@ -297,10 +368,9 @@ include("db.php");
                         <a class="menu-btn-changer" href="#" style="color: #f5f5f5;"><img src="img/flags/flag.png" alt="" width="30" /> Angola</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
-
     <!-- jquery -->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>

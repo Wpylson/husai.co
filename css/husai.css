@@ -1,53 +1,83 @@
 /* part1 */
-#plano :hover{
+#plano :hover {
     background: #93278F;
 }
 
-.girl{
-background: url(../img/husai/home_page/girl.png) no-repeat;
-background-size: cover;
-background-position: center;
-flex-wrap: wrap;
+.girl {
+    background: url(../img/husai/home_page/girl.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
 }
+
 /* .girl_img{
     height: 435px;
     width: 430px;
 } */
 
-.btn-husai{
-background-color:#93278F;
-color:#fff;
-border-radius:20px;
-border: 2px solid #F0E738;
-padding: 10px;
-margin-top: 20px;
-margin-bottom: 20px;
+.btn-husai {
+    background-color: #93278F;
+    color: #fff;
+    border-radius: 20px;
+    border: 2px solid #F0E738;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.btn-husai:hover{
+.btn-husai:hover {
     background-color: #F0E738;
     color: #93278F;
     text-decoration: none;
 }
 
-.margem-clientes{
+.btn-download {
+    background-color: #fff;
+    color: #93278F;
+    border-radius: 20px;
+    border: 2px solid #93278F;
+    padding: 5px 20px 5px 20px;
+}
+
+.btn-download:hover {
+    background-color: #93278F;
+    color: #fff;
+    text-decoration: none;
+}
+
+.chourico {
+    background-color: #e1e1eb;
+    color: #c1c1c1;
+    border-radius: 20px;
+    border: 1px solid #d1d1d1;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+}
+
+.chourico strong{
+    text-transform: uppercase;
+    color: grey;
+}
+
+
+.margem-clientes {
     margin: 10px;
     border-radius: 15px;
 }
 
-.barra-top{
+.barra-top {
     border-top: 1px solid #c1c1c1;
     padding-top: 30px;
 }
 
-.btn-ver-planos{
+.btn-ver-planos {
     background-color: #93278F;
     color: #fff;
     padding: 5px 10px 5px 10px;
     border-radius: 15px;
 }
 
-.img-hospedagem{
+.img-hospedagem {
     width: inherit;
     height: inherit;
     z-index: 1;
@@ -55,8 +85,12 @@ margin-bottom: 20px;
     top: 10px;
 }
 
-.box-img-hospedagem{
+.box-img-hospedagem {
     width: 100px;
     height: 100px;
 }
 
+.ok-circle-icon{
+    color: #93278F;
+    font-size: 16px;
+}

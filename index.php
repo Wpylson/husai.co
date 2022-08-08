@@ -2,7 +2,7 @@
     include("db.php");
     ?>
 <!doctype html>
-<html lang="pt">
+<html lang="pt-pt">
 
 <head>
     <meta charset="utf-8">
@@ -164,8 +164,12 @@
                         <li class="nav-item">
                             <a class="nav-link" href="domains.php">Domínios</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="nossoproduto.php">Nossos Produtos</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" id="header-help-drop-down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nossos Produtos<span class="sr-only">(current)</span></a>
+                            <ul class="dropdown-menu coodiv-dropdown-header" aria-labelledby="header-help-drop-down">
+                                <li><a class="dropdown-item" href="enter.php">Enter</a></li>
+                                <li><a class="dropdown-item" href="bankya.php">Bankya</a></li>
+                            </ul>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -292,8 +296,8 @@
 
     <!-- Start Slide -->
 
-    <main>
-        <div class="container">
+    <main class="carousel-margin-top">
+        <div class="container" style="padding: 0;">
             <div class="carousel slide" id="main-carousel" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
@@ -623,6 +627,26 @@
         </div>
     </section>
 
+    <section class="footer-section-banner" style="background: #93278F;">
+        <div class="container">
+            <div class="row free-trial-footer-banner">
+                <div class="col-md-8">
+                    <h5 class="free-trial-footer-banner-title" style="color: #fff;text-transform: uppercase;text-align: left;">criação de projectos e sites personalizados <br> para sua empresa arrecadar <br>resultados execelêntes</h5>
+                    <p class="free-trial-footer-banner-text" style="color: #fff;margin:30px 0px 0px 30px; font-size: 20;"><em class="fa fa-angle-up" style="margin-right:5px;font-size: 16px;"></em>Especialistas espalhados por toda Angola</p>
+                    <p class="free-trial-footer-banner-text" style="margin-left:50px;margin-bottom: 30px;font-size: 12px;line-height: 16px;margin-top: 10px;">A Husai possui uma equipa de especialistas <br> para ajudar startups e empresas a obterem <br> grandes resultados nos empreendimentos <br> onlines através de presença forte na internet.</p>
+                    <p class="free-trial-footer-banner-text" style="color: #fff;margin:30px; font-size: 20;"><em class="fa fa-angle-down" style="margin-right:5px;font-size: 16px;"></em>Criação de sites, E-mail corporativo, loja e projectos</p>
+                </div>
+
+                <div class="col-md-4 free-trial-footer-links d-flex mx-auto flex-column">
+                    <div class="mb-auto"></div>
+                    <div class="mb-auto">
+                    <a class="sign-btn" href="#" style="background: #93278F;border: 2px solid #F0E738 ">Contacte a nossa equipa agora!</a>
+                    </div>
+                    <div class="mt-auto"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="padding-40-0-100 position-relative">
         <div class="container">
@@ -792,7 +816,7 @@
                         </div>
                        
                        <div class="col-md-4">
-                       <h5 class="quiq-links-footer-title margem-top-lista-link"><em class="fa fa-arrow-right" style="margin-right:5px"></em>Links Rápidos</h5>
+                       <h5 class="quiq-links-footer-title margem-top-lista-link"><em class="fa fa-angle-right" style="margin-right:5px"></em>Links Rápidos</h5>
                        <ul class="quiq-links-footer-ul">
                             <li><a href="#" style="color: #f5f5f5;">anúncios da nossa empresa</a></li>
                             <li><a href="#" style="color: #f5f5f5;">Base de conhecimento</a></li>

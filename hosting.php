@@ -14,6 +14,8 @@ include("db.php");
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- main css file -->
     <link href="css/main.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/husai.css">
 
 </head>
 
@@ -554,9 +556,21 @@ include("db.php");
         <div class="container">
             <div class="row">
                 <div class="col-md-9 quiq-links-footer">
-                    <h5 class="quiq-links-footer-title">Links Rápidos</h5>
+                  
                     <div class="row">
-                        <ul class="col-md-6 quiq-links-footer-ul">
+                        <div class="col-md-3">
+                            <h5 class="quiq-links-footer-title">Evolua!!</h5>
+                            <p style="text-align:left;">Transforme a sua empresa por meio 
+                        da tecnologia e aumente os seus resultados.</p>
+                        <div class="mb-auto">
+                        <a class="log-btn btn-husai" href="#" >Ver todos os planos</a>
+                    </div>
+                   
+                        </div>
+                       
+                       <div class="col-md-4">
+                       <h5 class="quiq-links-footer-title margem-top-lista-link"><em class="fa fa-angle-right" style="margin-right:5px"></em>Links Rápidos</h5>
+                       <ul class="quiq-links-footer-ul">
                             <li><a href="#" style="color: #f5f5f5;">anúncios da nossa empresa</a></li>
                             <li><a href="#" style="color: #f5f5f5;">Base de conhecimento</a></li>
                             <li><a href="#" style="color: #f5f5f5;">Transferências</a></li>
@@ -567,8 +581,10 @@ include("db.php");
                             <li><a href="#" style="color: #f5f5f5;">Produtos de software</a></li>
                             <li><a href="#" style="color: #f5f5f5;">Hospedagem Dedicada</a></li>
                         </ul>
+                       </div>
 
-                        <ul class="col-md-6 quiq-links-footer-ul">
+                       <div class="col-md-4">
+                       <ul class="quiq-links-footer-ul">
                             <li><a href="#" style="color: #f5f5f5;">Entre em contato conosco</a></li>
                             <li><a href="#" style="color: #f5f5f5;">Status da rede</a></li>
                             <li><a href="#" style="color: #f5f5f5;">Esqueceu sua senha?</a></li>
@@ -579,16 +595,17 @@ include("db.php");
                             <li><a href="#" style="color: #f5f5f5;">Área do cliente</a></li>
                             <li><a href="#" style="color: #f5f5f5;">gerencie sua conta</a></li>
                         </ul>
+                       </div>
 
                     </div>
                 </div>
 
                 <div class="col-md-3">
-                    <h5 class="quiq-links-footer-title">Método de Pagamento</h5>
+                    <!-- <h5 class="quiq-links-footer-title">Método de Pagamento</h5>
                     <p class="secure-img-footer-area">
                         <img src="bankya2.png" alt="" width="100" />
                         <span>isso é apenas por motivo de demonstração</span>
-                    </p>
+                    </p> -->
 
                     <div class="footer-contact-method">
                         <a href="#">
@@ -606,16 +623,17 @@ include("db.php");
                 </div>
             </div>
 
-            <div class="mr-tp-40 row justify-content-between footer-area-under">
+            <div class="mr-tp-40 row justify-content-between footer-area-under barra-top">
                 <div class="col-md-4">
                     <a href="#"><img class="footer-logo-blue" src="logo.png" alt="" /></a>
+                    <div class="final-footer-area-text" style="color: #f5f5f5;">
+                    © Copyright 2022 Husai , Todos os direitos reservados
+                </div>
                     <div class="footer-social-icons">
-                        <a href="#" style="background: #F0E738; color: #93278F;"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" style="background: #F0E738; color: #93278F;"><i class="fab fa-twitter"></i></a>
-                        <a href="#" style="background: #F0E738; color: #93278F;"><i class="fab fa-instagram"></i></a>
-                        <a href="#" style="background: #F0E738; color: #93278F;"><i class="fab fa-youtube"></i></a>
-                        <a href="#" style="background: #F0E738; color: #93278F;"><i class="fab fa-dribbble"></i></a>
-                        <a href="#" style="background: #F0E738; color: #93278F;"><i class="fab fa-google"></i></a>
+                        <a href="#" style="background: #F0E738; color: #93278F;"><i class="fab fa-facebook-f" style="line-height:2"></i></a>
+                        <a href="#" style="background: #F0E738; color: #93278F;"><i class="fab fa-twitter"  style="line-height:2"></i></a>
+                        <a href="#" style="background: #F0E738; color: #93278F;"><i class="fab fa-instagram"  style="line-height:2"></i></a>
+                        <a href="#" style="background: #F0E738; color: #93278F;"><i class="fab fa-youtube"  style="line-height:2"></i></a>
                     </div>
                 </div>
 
@@ -632,14 +650,12 @@ include("db.php");
 
             </div>
 
-            <div class="row justify-content-between final-footer-area mr-tp-40">
-                <div class="final-footer-area-text" style="color: #f5f5f5;">
-                    © Copyright 2022 Husai , Todos os direitos reservados
-                </div>
+            <!-- <div class="row justify-content-between final-footer-area mr-tp-40">
+               
 
                 <div class="footer-lang-changer">
                     <div class="lang-changer-drop-up">
-                        <a class="menu-btn-changer" role="button" id="dropupmenulagchanger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" style="color: #f5f5f5;"><i class="fas fa-globe-africa"></i> Português</a>
+                        <a class="menu-btn-changer" role="button" id="dropupmenulagchanger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" style="color: #f5f5f5;"><i class="fas fa-globe-africa"></i> Português/Angola</a>
                         <div class="dropdown-menu dropupmenulagchanger" aria-labelledby="dropupmenulagchanger">
                         </div>
                     </div>
@@ -648,7 +664,7 @@ include("db.php");
                         <a class="menu-btn-changer" href="#" style="color: #f5f5f5;"><img src="img/flags/flag.png" alt="" width="30" /> Angola</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
