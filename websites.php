@@ -2,7 +2,7 @@
 include("db.php");
  ?>
 <!doctype html>
-<html lang="en">
+<html lang="pt-pt">
 
 <head>
     <meta charset="utf-8">

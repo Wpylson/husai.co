@@ -1,7 +1,8 @@
 /* part1 */
 #plano :hover {
     background: #93278F;
-}
+    color: #fff;
+} 
 
 .girl {
     background: url(../img/husai/home_page/girl.png) no-repeat;
@@ -10,13 +11,27 @@
     flex-wrap: wrap;
 }
 
-.altura-50{
-    min-height: 50px;
-}
-.altura-20{
-    min-height: 20px;
+.altura-50{ min-height: 50px;}
+.altura-20{min-height: 20px;}
+.altura-10{min-height: 10px;}
+.box-height-500{ min-height: 500px;}
+.box-pt-pb-20{padding-top:20px;padding-bottom: 20px;}
+
+.mt-20-mb-20{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
+.title-header{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    color: #fff;
+    position: relative;
+}
 .btn-husai {
     background-color: #93278F;
     color: #fff;
@@ -47,6 +62,19 @@
     text-decoration: none;
 }
 
+.btn-fale-connosco {
+    background-color: transparent;
+    color: #fff;
+    border-radius: 20px;
+    border: 2px solid #F0E738;
+    padding: 5px 20px 5px 20px;
+}
+
+.btn-fale-connosco:hover {
+    color: #d1d1d1;
+    text-decoration: none;
+}
+
 .chourico {
     background-color: #e1e1eb;
     color: #c1c1c1;
@@ -60,7 +88,6 @@
     text-transform: uppercase;
     color: grey;
 }
-
 
 .margem-clientes {
     margin: 10px;
@@ -109,4 +136,41 @@
 
 .btn-entrar:hover{
     color: #e1e1eb;
+}
+
+.bg-image{
+    background: url(../img/husai/hospedagem/hospedam-bg.png) no-repeat;
+    height: inherit;
+    position: relative;
+    background-size: cover;
+    max-height: 500px !important;
+    background-size: 100% !important;
+    height: 70px;
+}
+
+.banner-bg-pink{
+    background: #93278F;
+    padding: 70px 0;
+    text-align: center !important;
+}
+
+.banner-title-setion{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+   
+}
+
+.banner-text-center{
+    margin-top: 50px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 27px;
+   
+}
+
+.border-botton-yellow{
+    border-bottom: 2px solid #F0E738;
 }

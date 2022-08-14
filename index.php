@@ -41,8 +41,8 @@
         }
 
         #clients .clients-wrap {
-            border-top: 1px solid #d6eaff;
-            border-left: 1px solid #d6eaff;
+            /* border-top: 1px solid #d6eaff;
+            border-left: 1px solid #d6eaff; */
             margin-bottom: 30px;
         }
 
@@ -90,7 +90,6 @@
         <!-- start header -->
 
         <div class="bg_overlay_header">
-            <div id="particles-bg"></div>
             <img src="fundo.png" alt="img-bg">
         </div>
         <!-- Fixed navbar -->
@@ -167,8 +166,8 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" role="button" id="header-help-drop-down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nossos Produtos<span class="sr-only">(current)</span></a>
                             <ul class="dropdown-menu coodiv-dropdown-header" aria-labelledby="header-help-drop-down">
+                            <li><a class="dropdown-item" href="bankya.php">Bankya</a></li>
                                 <li><a class="dropdown-item" href="enter.php">Enter</a></li>
-                                <li><a class="dropdown-item" href="bankya.php">Bankya</a></li>
                             </ul>
                         </li>
 
@@ -236,7 +235,7 @@
         <div class="mt-auto header-top-height"></div>
         <main class="container mb-auto">
             <div class="row">
-                <div class="col-md-7 text-left">
+                <div class="col-md-5 text-left">
                     <h3 class="mt-3 main-header-text-title" style="text-align: left;margin-bottom: 0px;"><span></span>Evolua!!!</h3>
                     <p class="text-white" style="font-size: 12px; color:#F0E738">Transforme a sua empresa por meio <br>
                         da tecnologia e aumente os seus <br>
@@ -247,7 +246,7 @@
                         <li><em class="fa fa-check" style="color:#F0E738"></em> <span class="text-white">OFERECEMOS A MELHOR ESTRATÉGIA DIGITAL</span></li>
                     </ul>
                     <!-- <div class="mt-auto header-top-height"></div> -->
-                    <h3 class="mt-3 main-header-text-title" style="text-align: left; margin-top:20px"><span></span>seguro e garantido</h3>
+                    <h3 class="mt-3 main-header-text-title" style="text-align: left; margin-top:20px;color:#F0E738"><span></span>seguro e garantido</h3>
                     <div class="row justify-content-left domain-search-row">
                         <form action="order.php" method="GET" id="domain-search-header" class="">
                             <i class="fas fa-globe"></i>
@@ -339,52 +338,13 @@
         </div><!-- /.container -->
     </main>
     <!-- end Slide -->
-    <!-- <section>
-        <div class="container">
-            <div class="row justify-content-start futures-version-2">
-                <div class="col-md-4">
-                    <div class="futures-version-2-box">
-                        <i class="bredhicon-download-cloud" style="color: #93278F;"></i>
-                        <h5>Equipe de segurança completa</h5>
-                        <p>A segurança de um site envolve investir em ações e soluções focadas em garantir a proteção de dados. Para alcançar esse objetivo, a Husai mantém o seu site atualizado.</p>
-                        <div class="text-center">
-                            <a class="more-btn align-left" href="#" style="background: #F0E738; color: #93278F; border: none;">Ler mais</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="futures-version-2-box">
-                        <span class="free-badge" style="color: #93278F;"><b></b>Grátis</span>
-                        <i class="bredhicon-share" style="color: #93278F;"></i>
-                        <h5>Sistemas analíticos</h5>
-                        <p>Voltadas para acesso e análise de dados, com objetivo final de transformar dados em informações capazes de dar suporte às decisões gerenciais de forma amigável e flexível ao usuário em tempo hábil.</p>
-                        <div class="text-right">
-                            <a class="more-btn" href="#" style="background: #F0E738; color: #93278F; border: none;">Ler mais</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="futures-version-2-box">
-                        <i class="bredhicon-mic" style="color: #93278F;"></i>
-                        <h5>Servidores Mundiais</h5>
-                        <p>A sua função é responder diretamente às requisições de registros da zona raiz, além de responder a outras requisições, retornando uma lista dos servidores de nome designados.</p>
-                        <div class="text-right">
-                            <a class="more-btn" href="#" style="background: #F0E738; color: #93278F; border: none;">Ler mais</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section> -->
+   
 
     <section class="padding-40-0 position-relative">
         <div class="container">
             <h5 class="title-default-coodiv-two">confira planos incríveis e faça seu pedido agora <span class="mr-tp-20">escolheu qual pacote é melhor para você.</span></h5>
             <div class="row justify-content-center">
-                <div id="monthly-yearly-chenge" class="mr-tp-40 style-two">
+                <div id="monthly-yearly-chenge" class="style-two">
                     <a class="active monthly-price"> <span class="change-box-text">Plano Mensal</span> <span class="change-box"></span></a>
                     <a class="yearli-price"> <span class="change-box-text">Plano Anual</span></a>
                 </div>
@@ -428,6 +388,7 @@
     </section>
 
     <section class="padding-20-0 position-relative">
+        
         <div class="container">
             <h5 class="title-default-coodiv-two" style="text-transform: none;"><strong>NA HUSAI,</strong> você encontra tudo que o seu site precisa</h5>
             <div class="row justify-content-center">
@@ -483,105 +444,9 @@
     </section>
 
 
-
-
-    <!-- <section class="section-wth-amwaj">
-        <div class="bg_overlay_section-amwaj">
-            <img src="img/bg/b_bg_02.jpg" alt="img-bg">
-        </div>
-
-        <div class="container">
-            <div class="row justify-content-between mr-tp-50">
-
-                <div class="col-md-6 side-text-right-container">
-                    <h2 class="side-text-right-title">Nós estamos com você ,<br> cada passo do caminho</h2>
-                    <p class="side-text-right-text">
-                        Se você está procurando um plano de hospedagem de site <b>pessoal</b> ou um plano de hospedagem de site <b>empresarial</b>, nós somos a solução perfeita para você. Nossos poderosos serviços de hospedagem de sites não apenas ajudarão você a atingir as metas gerais de seu site, mas também fornecerão a confiança necessária para saber que você é parceiro de uma empresa <a href="#">confiável</a> e <a href="#">segura</a> plataforma de hospedagem de sites.
-                        <br>
-                        <br> Somos uma das plataformas de hospedagem de sites mais fáceis de usar e continuamos comprometidos em fornecer aos nossos clientes uma das melhores soluções de hospedagem do mercado.
-                    <p>
-                        <a class="side-text-right-button" href="#">Comece conosco agora</a>
-                </div>
-
-                <div class="col-md-5">
-
-                    <div class="display-on-hover-box-container">
-                        <a href="#tab1" class="display-on-hover-box-items">
-                            <img src="img/svgs/hover-box/quality-badge.svg" alt="" />
-                        </a>
-                        <a href="#tab2" class="display-on-hover-box-items">
-                            <img src="img/svgs/hover-box/inclined-rocket.svg" alt="" />
-                        </a>
-                        <a href="#tab3" class="display-on-hover-box-items">
-                            <img src="img/svgs/hover-box/public-speech.svg" alt="" />
-                        </a>
-                        <a href="#tab4" class="display-on-hover-box-items">
-                            <img src="img/svgs/hover-box/big-light.svg" alt="" />
-                        </a>
-                        <a href="#tab5" class="display-on-hover-box-items">
-                            <img src="img/svgs/hover-box/big-lifesaver.svg" alt="" />
-                        </a>
-                        <a href="#tab6" class="display-on-hover-box-items">
-                            <img src="img/svgs/hover-box/headphones-with-thin-mic.svg" alt="" />
-                        </a>
-                        <a href="#tab7" class="display-on-hover-box-items">
-                            <img src="img/svgs/hover-box/inclined-paper-plane.svg" alt="" />
-                        </a>
-                        <a href="#tab8" class="display-on-hover-box-items">
-                            <img src="img/svgs/hover-box/big-telephone.svg" alt="" />
-                        </a>
-
-                        <div class="display-on-hover-box-content">
-                            <div class="display-on-hover-box-cotent-items">
-                                <div id="tab1" class="tab-content-hover">
-                                    <h5>Hospedagem Compartilhada</h5>
-                                    <p>Garante diversos benefícios ao usuário sem exigir um investimento alto. Hospedar um domínio em regime compartilhado é o mesmo que aproveitar vários serviços e infraestrutura.</p>
-                                </div>
-                                <div id="tab2" class="tab-content-hover">
-                                    <h5>Hospedagem Dedicada</h5>
-                                    <p>A hospedagem dedicada é uma opção de hospedagem da Internet em que um servidor (ou servidores) físico fica dedicado a um único cliente comercial.</p>
-                                </div>
-                                <div id="tab3" class="tab-content-hover">
-                                    <h5>Armazenamento em nuvem</h5>
-                                    <p>Basicamente, o armazenamento em nuvem consiste no ato de armazenar um ou mais arquivos em um HD fora da sua máquina, através da internet.</p>
-                                </div>
-                                <div id="tab4" class="tab-content-hover">
-                                    <h5>Domínios</h5>
-                                    <p>O domínio geralmente usa o nome da sua organização e um sufixo padrão da Internet, como minhaempresa.com ou universidadeestadual.edu.</p>
-                                </div>
-                                <div id="tab5" class="tab-content-hover">
-                                    <h5>Servidores VPS</h5>
-                                    <p>Um Servidor Privado Virtual (VPS) é uma das opções de alojamento web mais flexíveis disponíveis.</p>
-                                </div>
-                                <div id="tab6" class="tab-content-hover">
-                                    <h5>Cloud VPS</h5>
-                                    <p>um servidor cloud utiliza a computação na nuvem. Isso quer dizer que você não terá uma máquina física.</p>
-                                </div>
-                                <div id="tab7" class="tab-content-hover">
-                                    <h5>Serviços de revendedor</h5>
-                                    <p>Este contrato forma um vínculo de parceria para a revenda de serviços de um fornecedor para outro, caso os mesmos tenham complementariedade e sinergia de negócios, e não mantenham concorrência.</p>
-                                </div>
-                                <div id="tab8" class="tab-content-hover">
-                                    <h5>Hospedagem WordPress</h5>
-                                    <p>um sistema que permite a criação, publicação e hospedagem de um site de forma simples e descomplicada, até mesmo por quem não possui conhecimentos em desenvolvimento de sites e webdesign.</p>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-            </div><!-- end row -->
-    <!--</div>end container -->
-    <!-- </section> -->
-
-
-
     <section class="padding-100-0-50 position-relative">
         <div class="container">
-        <h5 class="title-default-coodiv-two" style="text-transform: none;">Porquê não ter <strong>SERVIDOR</strong> só seu? <br>
+        <h5 class="title-default-coodiv-two" style="text-transform: none;margin-bottom: 30px;">Porquê não ter <strong>SERVIDOR</strong> só seu? <br>
         Confira os nossos incríveis planos de servidores</h5>
             <div class="banner-servers-box" style="background: #F0E738;">
                 <div class="counter-placeholder"></div>
@@ -884,34 +749,24 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 row">
-                    <ul class="col-md-6 under-footer-ullist">
-                        <li><a href="#" style="color: #f5f5f5;">sobre nós</a></li>
-                        <li><a href="#" style="color: #f5f5f5;">Nossos serviços</a></li>
-                    </ul>
-                    <ul class="col-md-6 under-footer-ullist text-right">
-                        <li><a href="#" style="color: #f5f5f5;">política de Privacidade</a></li>
-                        <li><a href="#" style="color: #f5f5f5;">termos de serviço</a></li>
+                <div class="col-md-8 row">
+                    <div class="col-md-12">
+                        <div class="col-md-6">
+                        <a href="#"><img class="footer-logo-blue" src="img/husai/clientes/lupa.png" alt="" /></a>
+                        <a href="#"><img class="footer-logo-blue" src="img/husai/logos/bankya_logo.jpg" alt="" /></a>
+                        <a href="#"><img class="footer-logo-blue" src="img/husai/logos/enter_logo.png" alt="" /></a>
+                        </div>
+                       
+                    </div>
+                
+                    <ul class="col-md-12 under-footer-ullist" style="text-transform: none ;">
+                        <li><span style="text-decoration: bold;">Serviços: </span> <a href="#" >Criação de Site</a> | <a href="#" >Hospedagem</a> | <a href="#" >Dominios</a> | <a href="#" >Certficado SSL</a></li>
+                        <li><span>Atenção: </span><a href="#" >Política de Privacidade</a> | <a href="#" >Anti-Spam</a>
                     </ul>
                 </div>
 
             </div>
 
-            <!-- <div class="row justify-content-between final-footer-area mr-tp-40">
-               
-
-                <div class="footer-lang-changer">
-                    <div class="lang-changer-drop-up">
-                        <a class="menu-btn-changer" role="button" id="dropupmenulagchanger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" style="color: #f5f5f5;"><i class="fas fa-globe-africa"></i> Português/Angola</a>
-                        <div class="dropdown-menu dropupmenulagchanger" aria-labelledby="dropupmenulagchanger">
-                        </div>
-                    </div>
-
-                    <div class="lang-changer-drop-up">
-                        <a class="menu-btn-changer" href="#" style="color: #f5f5f5;"><img src="img/flags/flag.png" alt="" width="30" /> Angola</a>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </section>
 

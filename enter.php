@@ -188,12 +188,12 @@ include("db.php");
                 <div class="col-md-12">
                     <div class="breadcrumb-hosting-pages row" style="height: 150px;">
                         <a class="col-md-6" href="bankya.php">
-                            <img src="img/husai/clientes/banky.png" alt="" />
+                            <img src="img/husai/logos/bankya_logo.jpg" alt="" style="width: 190px;" />
                             <!-- <span class="sub-breadcrumb-host-title">hospedagem web</span> -->
                         </a>
 
-                        <a class="col-md-6 active" href="enter.php">
-                            <img src="img/husai/clientes/enter.png" alt="" />
+                        <a class="col-md-6 active" href="#">
+                            <img src="img/husai/logos/enter_logo.png" alt="" style="width: 190px;"/>
                             <!-- <span class="sub-breadcrumb-host-title">servidores</span> -->
                         </a>
 
@@ -341,34 +341,25 @@ include("db.php");
                     </div>
                 </div>
 
-                <div class="col-md-4 row">
-                    <ul class="col-md-6 under-footer-ullist">
-                        <li><a href="#" style="color: #f5f5f5;">sobre nós</a></li>
-                        <li><a href="#" style="color: #f5f5f5;">Nossos serviços</a></li>
-                    </ul>
-                    <ul class="col-md-6 under-footer-ullist text-right">
-                        <li><a href="#" style="color: #f5f5f5;">política de Privacidade</a></li>
-                        <li><a href="#" style="color: #f5f5f5;">termos de serviço</a></li>
+                <div class="col-md-8 row">
+                    <div class="col-md-12">
+                        <div class="col-md-6">
+                        <a href="#"><img class="footer-logo-blue" src="img/husai/clientes/lupa.png" alt="" /></a>
+                        <a href="#"><img class="footer-logo-blue" src="img/husai/logos/bankya_logo.jpg" alt="" /></a>
+                        <a href="#"><img class="footer-logo-blue" src="img/husai/logos/enter_logo.png" alt="" /></a>
+                        </div>
+                       
+                    </div>
+                
+                    <ul class="col-md-12 under-footer-ullist" style="text-transform: none ;">
+                        <li><span style="text-decoration: bold;">Serviços: </span> <a href="#" >Criação de Site</a> | <a href="#" >Hospedagem</a> | <a href="#" >Dominios</a> | <a href="#" >Certficado SSL</a></li>
+                        <li><span>Atenção: </span><a href="#" >Política de Privacidade</a> | <a href="#" >Anti-Spam</a>
                     </ul>
                 </div>
 
             </div>
 
-            <!-- <div class="row justify-content-between final-footer-area mr-tp-40">
-               
-
-                <div class="footer-lang-changer">
-                    <div class="lang-changer-drop-up">
-                        <a class="menu-btn-changer" role="button" id="dropupmenulagchanger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" style="color: #f5f5f5;"><i class="fas fa-globe-africa"></i> Português/Angola</a>
-                        <div class="dropdown-menu dropupmenulagchanger" aria-labelledby="dropupmenulagchanger">
-                        </div>
-                    </div>
-
-                    <div class="lang-changer-drop-up">
-                        <a class="menu-btn-changer" href="#" style="color: #f5f5f5;"><img src="img/flags/flag.png" alt="" width="30" /> Angola</a>
-                    </div>
-                </div>
-            </div> -->
+           
         </div>
     </section>
     <!-- jquery -->

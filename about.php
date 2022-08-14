@@ -204,7 +204,7 @@ include("db.php");
                                 <i class="h-flaticon-019-uptime"></i>
                                 <h5>revendedores de domínio</h5>
                                 <p>Oferecemos um mês de serviço gratuito para novos clientes.* Inscreva-se para sua oferta de avaliação e instantaneamente tenha hospedagem de luxo em sua conta com</p>
-                                <a href="#" style="background: #F0E738; color: #93278F; border: none;"></a>
+                                <a href="#" style=""></a>
                             </div>
                         </div>
 
@@ -213,7 +213,7 @@ include("db.php");
                                 <i class="h-flaticon-023-database-2"></i>
                                 <h5>hospedagem na web</h5>
                                 <p>Oferecemos um mês de serviço gratuito para novos clientes.* Inscreva-se para sua oferta de avaliação e instantaneamente tenha hospedagem de luxo em sua conta com </p>
-                                <a href="#" style="background: #F0E738; color: #93278F; border: none;"></a>
+                                <a href="#" style=""></a>
                             </div>
                         </div>
 
