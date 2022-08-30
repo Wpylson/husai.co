@@ -11,7 +11,8 @@
     flex-wrap: wrap;
 }
 
-.altura-50{ min-height: 50px;}
+.altura-50{ min-height: 50px !important;}
+.altura-40{ min-height: 40px !important;}
 .altura-20{min-height: 20px;}
 .altura-10{min-height: 10px;}
 .box-height-500{ min-height: 500px;}
@@ -26,7 +27,7 @@
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 25px;
     letter-spacing: 1px;
     margin-bottom: 30px;
     color: #fff;
@@ -148,9 +149,9 @@
     height: 70px;
 }
 
-.banner-bg-pink{
-    background: #93278F;
-    padding: 70px 0;
+.banner-bg-yellow{
+    background: #F0E738;
+    padding: 20px 0;
     text-align: center !important;
 }
 
@@ -172,7 +173,7 @@
 }
 
 .border-botton-yellow{
-    border-bottom: 2px solid #F0E738;
+    border-bottom: 2px solid #93278F;
 }
 
 .user-header{
@@ -212,4 +213,17 @@
 .btn-profile:hover{
     text-decoration: none;
     color: #495057;
+}
+
+/* Lista */
+.lista{
+    list-style: none;
+}
+
+.lista li {
+    font-size: 12px;
+    padding: 2px;
+    font-weight: 500;
+    color: #4c5b63;
+    z-index: 1
 }

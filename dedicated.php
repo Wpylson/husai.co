@@ -180,20 +180,16 @@ include("db.php");
                 </div>
                 <div class="col-md-6">
                     <div class="breadcrumb-hosting-pages row">
-                        <a class="col-md-4" href="hosting.php">
-                            <img src="img/svgs/hosting.svg" alt="" />
-                            <span class="sub-breadcrumb-host-title">hospedagem web</span>
-                        </a>
+                        
 
-                        <a class="col-md-4" href="servers.php">
+                        <a class="col-md-6 active" href="dedicated.php">
+                            <img src="img/svgs/dedicated.svg" alt="" />
+                            <span class="sub-breadcrumb-host-title">Dedicado</span>
+                        </a>
+                        <a class="col-md-6" href="servers.php">
                             <span class="off-tag">-15% de desconto</span>
                             <img src="img/svgs/servers.svg" alt="" />
                             <span class="sub-breadcrumb-host-title">servidores</span>
-                        </a>
-
-                        <a class="col-md-4 active" href="dedicated.php">
-                            <img src="img/svgs/dedicated.svg" alt="" />
-                            <span class="sub-breadcrumb-host-title">Dedicado</span>
                         </a>
                     </div>
                 </div>

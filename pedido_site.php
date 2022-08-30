@@ -73,7 +73,7 @@ include("db.php");
                             <a class="nav-link" href="index.php" role="button" id="header-first-drop-down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Início</a>
                         </li>
 
-                        <li class="nav-item megamenu dropdown">
+                        <li class="nav-item megamenu dropdown active">
                             <a class="nav-link" href="#" role="button" id="services-megamenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Serviços <span class="megamenu-toggle"></span></a>
                             <div class="dropdown-menu coodiv-dropdown-megamnu default-megamenu" aria-labelledby="services-megamenu">
                                 <div class="d-flex justify-content-center bd-highlight mb-3 megamenu-items-header">
@@ -130,7 +130,7 @@ include("db.php");
                             <a class="nav-link" href="nossoproduto.php">Nossos Produtos</a>
                         </li>
 
-                        <li class="nav-item dropdown active">
+                        <li class="nav-item dropdown ">
                             <a class="nav-link" href="#" role="button" id="header-help-drop-down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Suporte<span class="sr-only">(current)</span></a>
                             <ul class="dropdown-menu coodiv-dropdown-header" aria-labelledby="header-help-drop-down">
                                 <li><a class="dropdown-item" href="help-center.php">Centro de Ajuda</a></li>
@@ -201,7 +201,7 @@ include("db.php");
                         avançadas para fazer crescer o seu negócio através da internet.
                     </p>
                     <div id="" class="mr-tp-20 custom-change">
-                        <a class="log-btn btn-fale-connosco" href="#"><em class="fa fa-phone" style="margin-right:5px"></em>Fale connosco </a>
+                        <a class="log-btn btn-fale-connosco" href="#solicitacao"><em class="fa fa-phone" style="margin-right:5px"></em>Fale connosco </a>
                     </div>
                 </div>
 
@@ -309,8 +309,7 @@ include("db.php");
         <div class="bg_overlay_header">
             <img src="fundo.png" alt="img-bg">
         </div>
-
-        <div class="mt-auto header-top-height"></div>
+        <div class="altura-50"></div>
         <main class="container mb-auto">
             <div class="row justify-content-center">
                 <div class="col-md-8">
@@ -321,15 +320,16 @@ include("db.php");
                 </div>
             </div>
         </main>
-        <div class="mt-auto header-top-height"></div>
+        <div class="altura-40"></div>
 
     </div>
+
     <section class="padding-0-100 position-relative mr-tp-30">
-        <div class="container">           
+        <div class="container">
             <div class="row justify-content-between">
 
                 <div class="col-md-4 side-text-right-container">
-                    <h2 class="side-text-right-title">Seu site com bons resultados <strong>Resultados</strong></h2>
+                    <h2 class="side-text-right-title">Seu site com bons <strong>Resultados</strong></h2>
                     <p class="side-text-right-text">
                         Site com design personalizado, otimizado para Google, resposivo e com áreas de contao inteligente.
                         <br>
@@ -349,13 +349,156 @@ include("db.php");
         </div>
     </section>
 
+    <section class="padding-0-100 position-relative mr-tp-30" style="background: #f2f7fb;">
+        <div class="container">
+            <div class="row justify-content-between">
 
-    <section class="banner-bg-pink border-botton-yellow">
+                <div class="col-md-7 about-us-img-section">
+                    <img src="img/husai/pedido_site/solucoes.png" alt="" />
+                </div>
+
+                <div class="col-md-4 side-text-right-container">
+                    <h2 class="side-text-right-title">Tenha o seu site apartir de <strong>AOA 100.000,00 </strong></h2>
+                    <p class="side-text-right-text" style="margin-bottom: 5px;">
+                        Com as seguintes páginas:
+                    </p>
+                    <ul class="lista">
+                        <li><em class="fa fa-check" style="color:#93278F"></em> <span class="">Página Inicial</span></li>
+                        <li><em class="fa fa-check" style="color:#93278F"></em> <span class="">Quem Somos/Sobre</span></li>
+                        <li><em class="fa fa-check" style="color:#93278F"></em> <span class="">Serviços/ Produtos</span></li>
+                        <li><em class="fa fa-check" style="color:#93278F"></em> <span class="">Contacta-nos</span></li>
+                        <li><em class="fa fa-check" style="color:#93278F"></em> <span class="">Blogue</span></li>
+                        <p class="side-text-right-text" style="font-size:12px;margin-bottom: 2px;">Adicionais como:</p>
+                        <li><em class="fa fa-check" style="color:#93278F"></em> <span class="">Plugins: Facebook, WhatsApp, Instagram</span></li>
+                        <li><em class="fa fa-check" style="color:#93278F"></em> <span class="">Mapa</span></li>
+                    </ul>
+                    <div style="text-align:center;">
+                        <a class="second-pricing-table-button" href="#" style="background: #93278F; color: #fff; border: none;">Entre em contacto</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="/*padding-0-100*/ position-relative mr-tp-30" id="solicitacao" style="padding: 0px 0px 40px 0px;">
+        <div class="container">
+        <h5 class="title-default-coodiv-two mr-tp-30" style="text-transform: none;"><strong style="text-transform:capitalize;">Tudo o que voçê precisa</strong> para tornar o seu negócio real na internet:</h5>
+            <div class="row justify-content-between">
+                <div class="col-md-5 about-us-img-section">                
+                    <img src="img/husai/ilustracao/ilu3.png" alt="">
+                    <div class="mob-display-none">
+                    <h5 class="immediate-help-center-title">Precisa de um atendimento <br>imediato ?</h5>
+                    <p class="immediate-help-center-text">nossa equipe de suporte esta aqui para você 24/7</p>
+
+                    <a class="immediate-help-center-link" href="#">+244 932 671 519</a>
+                    <a class="immediate-help-center-link" href="#">suporte@husai.co</a>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <?php
+                    if (isset($_POST["enviar"])) {
+                        $name = $_POST["name"];
+                        $email = $_POST["email"];
+                        $message = $_POST["message"];
+                        $insert = "INSERT INTO `mensagens`(`nome`, `titulo`, `email`, `mensagem`) VALUES ('$name','default','$email','$message')";
+                        $cog = mysqli_query($conn, $insert);
+                        if ($cog) {
+                    ?>
+                            <div class="alert alert-success" role="alert">
+                                A sua mensagem foi enviada com sucesso, enviaremos uma resposta dentro embreve...
+                            </div>
+                    <?php
+                        }
+                    }
+                    ?>
+                    <form class="row form-contain-home contact-page-form-send" method="POST">
+                        <!-- start form -->
+                        <h5>Faça a sua solicitação <span>Preencha todos os campos</span></h5>
+                        <div id="form-messages"></div>
+                        <!-- form message -->
+
+                        <div class="col-md-12">
+                            <!-- start col -->
+                            <div class="field input-field">
+                                <input class="form-contain-home-input" type="text" id="name" name="name" placeholder="escreve seu nome" required>
+                                <!-- input -->
+                                <i class="fas fa-user" style="color: #93278F;"></i>
+                            </div>
+                        </div>
+                        <!-- end col -->
+
+                        <div class="col-md-12">
+                            <!-- start col -->
+                            <div class="field input-field">
+                                <input class="form-contain-home-input" type="email" id="email" name="email" placeholder="escreve seu email" required>
+                                <!-- input -->
+                                <i class="far fa-envelope" style="color: #93278F;"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <!-- start col -->
+                            <div class="field input-field">
+                                <input class="form-contain-home-input" type="email" id="email" name="email" placeholder="escreve seu email" required>
+                                <!-- input -->
+                                <i class="far fa-envelope" style="color: #93278F;"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <!-- start col -->
+                            <div class="field input-field">
+                                <input class="form-contain-home-input" type="email" id="email" name="email" placeholder="escreve seu email" required>
+                                <!-- input -->
+                                <i class="far fa-envelope" style="color: #93278F;"></i>
+                            </div>
+                        </div>
+                        <!-- end col -->
+
+                        <div class="col-md-12">
+                            <!-- start col -->
+                            <div class="field input-field">
+                                <textarea class="form-contain-home-input" id="message" name="message" placeholder="escreve sua mensagem" required></textarea>
+                                <!-- textarea -->
+                            </div>
+                        </div>
+                        <!-- end col -->
+                        <?php
+                        if (isset($_COOKIE["cliente"])) {
+                        ?>
+                            <div class="btn-holder-contect">
+                                <button type="submit" name="enviar" style="background: #F0E738; color: #93278F;">Enviar</button>
+
+                            </div>
+                        <?php
+                        } else {
+                        ?>
+                            <div class="btn-holder-contect">
+                                <a class="btn-profile" href="signin.php"> <em class="fa fa-lock" style="margin-right:5px"></em>Iniciar Sessão</a>
+
+                            </div>
+
+                        <?php
+                        }
+                        ?>
+
+
+                    </form>
+                    <!-- end form -->
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- 
+    <section class="footer-section-banner" style="background: #F0E738;">
        <div class="container">
-       <div class=" row justify-content-center">
+       <div class=" row free-trial-footer-banner">
         <div class="col-md-8 text-center">
                     <h3 class="mt-3 title-header">Hospedagens de Sites</h3>
-                    <h3 class="" style="color:#fff ;font-size: 36px;font-weight: normal;">Para pequenos e grandes negócios</h3>
+                    <h3 class="" style="color:#fff ;font-size: 30px;font-weight: normal;">Para pequenos e grandes negócios</h3>
                     
                     <div id="" class="mr-tp-50 custom-change">
                         <a class="log-btn btn-fale-connosco" href="#" >VER TODOS PLANOS </a>
@@ -364,6 +507,78 @@ include("db.php");
         </div>
 
        </div>
+    </section> -->
+
+    <section class="footer-section-banner" style="background: #F0E738;">
+        <div class="container">
+            <div class="row free-trial-footer-banner">
+                <div class="col-md-8">
+                    <h5 class="free-trial-footer-banner-title" style="color: #93278F;">Hospedagens de Sites</h5>
+                    <p class="free-trial-footer-banner-text" style="color: #93278F;">Para pequenos e grandes negócios</p>
+                </div>
+
+                <div class="col-md-4 free-trial-footer-links d-flex mx-auto flex-column">
+                    <div class="mb-auto"></div>
+                    <div class="mb-auto">
+                        <a class="sign-btn" href="signup.php" style="background: #93278F;">VER TODOS PLANOS</a>
+                    </div>
+                    <div class="mt-auto"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="padding-100-0 with-top-border border-botton-yellow">
+        <div class="container">
+            <h5 class="title-default-coodiv-two">Perguntas frequentes.</h5>
+
+            <div class="row justify-content-center mr-tp-40">
+                <div class="col-md-9">
+
+                    <div class="accordion" id="frequently-questions">
+
+                        <div class="questions-box">
+                            <div id="headingOne">
+                                <button class="btn questions-title" type="button" data-toggle="collapse" data-target="#questionone" aria-expanded="true" aria-controls="questionone">
+                                    Como posso solicitar uma nova hospedagem?
+                                </button>
+                            </div>
+
+                            <div id="questionone" class="collapse show questions-reponse" aria-labelledby="headingOne" data-parent="#frequently-questions">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+
+                        <div class="questions-box">
+                            <div id="headingtwo">
+                                <button class="btn questions-title collapsed" type="button" data-toggle="collapse" data-target="#questiontwo" aria-expanded="true" aria-controls="questiontwo">
+                                    O que é hospedagem de revendedores ?
+                                </button>
+                            </div>
+
+                            <div id="questiontwo" class="collapse questions-reponse" aria-labelledby="headingtwo" data-parent="#frequently-questions">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+
+                        <div class="questions-box">
+                            <div id="headingtree">
+                                <button class="btn questions-title collapsed" type="button" data-toggle="collapse" data-target="#questiontree" aria-expanded="true" aria-controls="questiontree">
+                                    Quero um novo nome de domínio
+                                </button>
+                            </div>
+
+                            <div id="questiontree" class="collapse questions-reponse" aria-labelledby="headingtree" data-parent="#frequently-questions">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
     </section>
 
     <section class="footer-section" style="background: #93278F;">
