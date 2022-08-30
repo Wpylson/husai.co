@@ -235,7 +235,7 @@
         <div class="mt-auto header-top-height"></div>
         <main class="container mb-auto">
             <div class="row">
-                <div class="col-md-5 text-left">
+                <div class="col-md-7 text-left">
                     <h3 class="mt-3 main-header-text-title" style="text-align: left;margin-bottom: 0px;"><span></span>Evolua!!!</h3>
                     <p class="text-white" style="font-size: 12px; color:#F0E738">Transforme a sua empresa por meio <br>
                         da tecnologia e aumente os seus <br>
@@ -249,7 +249,7 @@
                     <h3 class="mt-3 main-header-text-title" style="text-align: left; margin-top:20px;color:#F0E738"><span></span>seguro e garantido</h3>
                     <div class="row justify-content-left domain-search-row">
                         <form action="order.php" method="GET" id="domain-search-header" class="">
-                            <i class="fas fa-globe"></i>
+                            <i class="fas fa-globe" style="left: 40px"></i>
                             <input type="text" placeholder="procure seu domínio agora" id="domain" name="query">
                             <input type="text" name="tipo" value="dominio" hidden>
                             <span class="inline-button-domain-order">

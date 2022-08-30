@@ -1,6 +1,6 @@
-<?php 
+<?php
 include("db.php");
- ?>
+?>
 <!doctype html>
 <html lang="pt-pt">
 
@@ -20,8 +20,9 @@ include("db.php");
 <body>
     <!-- start body -->
 
- 
-    <div class="preloader"><!-- start preloader -->
+
+    <div class="preloader">
+        <!-- start preloader -->
         <div class="preloader-container">
             <img src="icone.png" width="50">
             <br><br>
@@ -32,15 +33,15 @@ include("db.php");
 
     <div id="coodiv-header" class="subpages-header-min moon-edition">
         <div class="bg_overlay_header">
-		<div id="particles-bg"></div>
-        <img src="fundo.png" alt="img-bg">
+            <div id="particles-bg"></div>
+            <img src="fundo.png" alt="img-bg">
         </div>
         <!-- Fixed navbar -->
-         <nav id="coodiv-navbar-header" class="navbar navbar-expand-md " style="background: #93278F;">
+        <nav id="coodiv-navbar-header" class="navbar navbar-expand-md " style="background: #93278F;">
             <div class="container main-header-coodiv-s">
                 <a class="navbar-brand" href="index.php">
-                <img class="w-logo" src="logo2.png" alt="" />
-                <img class="b-logo" src="logo2.png" alt="" />
+                    <img class="w-logo" src="logo2.png" alt="" />
+                    <img class="b-logo" src="logo2.png" alt="" />
                 </a>
                 <button class="navbar-toggle offcanvas-toggle menu-btn-span-bar ml-auto" data-toggle="offcanvas" data-target="#offcanvas-menu-home">
                     <span></span>
@@ -53,53 +54,53 @@ include("db.php");
                             <a class="nav-link" href="index.php" role="button" id="header-first-drop-down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Início</a>
                         </li>
 
-                       <li class="nav-item megamenu dropdown active">
+                        <li class="nav-item megamenu dropdown active">
                             <a class="nav-link" href="#" role="button" id="services-megamenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Serviços <span class="megamenu-toggle"></span></a>
                             <div class="dropdown-menu coodiv-dropdown-megamnu default-megamenu" aria-labelledby="services-megamenu">
-                            <div class="d-flex justify-content-center bd-highlight mb-3 megamenu-items-header">
-                            <div class="p-2 bd-highlight">
-                            <a href="hosting.php">
-                            <i class="bredhicon-sun" style="background: #F0E738; color: #93278F;"></i>
-                            <h5>Hospedagem</h5>
-                            <p>A hospedagem é um espaço no servidor que armazena todos os arquivos que compõem um site para deixá-lo acessível na internet.</p>
-                            </a>
-                            </div>
-                            
-                            <div class="p-2 bd-highlight">
-                            <a href="ssl.php">
-                            <i class="bredhicon-award-empty" style="background: #F0E738; color: #93278F;"></i>
-                            <h5>Certificado SSL</h5>
-                            <p>Certificado SSL é um certificado digital que autentica a identidade de um site e possibilita uma conexão criptografada.</p>
-                            </a>
-                            </div>
-                            
-                            <div class="p-2 bd-highlight">
-                            <a href="websites.php">
-                            <i class="bredhicon-steering-wheel" style="background: #F0E738; color: #93278F;"></i>
-                            <h5>Criação de Site</h5>
-                            <p> um site funciona como uma porta de entrada da sua empresa na internet, baseado neste conjunto de páginas que precisam de uma estrutura para ficar armazenada e de um nome de domínio.</p>
-                            </a>
-                            </div>
-                            
-                            <div class="p-2 bd-highlight">
-                            <a href="domains.php">
-                            <i class="bredhicon-headphones" style="background: #F0E738; color: #93278F;"></i>
-                            <h5>Domínios</h5>
-                            <p>O domínio geralmente usa o nome da sua organização e um sufixo padrão da Internet, como minhaempresa.com ou universidadeestadual.edu.</p>
-                            </a>
-                            </div>
-                            
-                            </div>
+                                <div class="d-flex justify-content-center bd-highlight mb-3 megamenu-items-header">
+                                    <div class="p-2 bd-highlight">
+                                        <a href="hosting.php">
+                                            <i class="bredhicon-sun" style="background: #F0E738; color: #93278F;"></i>
+                                            <h5>Hospedagem</h5>
+                                            <p>A hospedagem é um espaço no servidor que armazena todos os arquivos que compõem um site para deixá-lo acessível na internet.</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="p-2 bd-highlight">
+                                        <a href="ssl.php">
+                                            <i class="bredhicon-award-empty" style="background: #F0E738; color: #93278F;"></i>
+                                            <h5>Certificado SSL</h5>
+                                            <p>Certificado SSL é um certificado digital que autentica a identidade de um site e possibilita uma conexão criptografada.</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="p-2 bd-highlight">
+                                        <a href="websites.php">
+                                            <i class="bredhicon-steering-wheel" style="background: #F0E738; color: #93278F;"></i>
+                                            <h5>Criação de Site</h5>
+                                            <p> um site funciona como uma porta de entrada da sua empresa na internet, baseado neste conjunto de páginas que precisam de uma estrutura para ficar armazenada e de um nome de domínio.</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="p-2 bd-highlight">
+                                        <a href="domains.php">
+                                            <i class="bredhicon-headphones" style="background: #F0E738; color: #93278F;"></i>
+                                            <h5>Domínios</h5>
+                                            <p>O domínio geralmente usa o nome da sua organização e um sufixo padrão da Internet, como minhaempresa.com ou universidadeestadual.edu.</p>
+                                        </a>
+                                    </div>
+
+                                </div>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link" role="button" id="webhosting-megamenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Hospedagem <span class="nav-new-tag" style="color: #93278F;">Novo</span></a>
                             <div class="dropdown-menu coodiv-dropdown-header web-menu" aria-labelledby="webhosting-megamenu">
-                            <ul class="web-hosting-menu-header">
-                            <li><i class="fas fa-server"></i> <a href="hosting.php">Hospedagem Compartilhada <span> A hospedagem compartilhada permite que diversos sites utilizem um único servidor.</span></a></li>
-                            <li><i class="fab fa-squarespace"></i> <a href="dedicated.php">hospedagem dedicada <span>A hospedagem dedicada é uma opção de hospedagem da Internet em que um servidor (ou servidores) físico fica dedicado a um único cliente comercial.</span></a></li>
-                            <li><i class="fab fa-cpanel"></i> <a href="cpanel.php">Revendedores cPanel <span>Gerenciador que permite revender diversas hospedagens e administrar uma carteira própria de clientes.</span></a></li>
-                            </ul>
+                                <ul class="web-hosting-menu-header">
+                                    <li><i class="fas fa-server"></i> <a href="hosting.php">Hospedagem Compartilhada <span> A hospedagem compartilhada permite que diversos sites utilizem um único servidor.</span></a></li>
+                                    <li><i class="fab fa-squarespace"></i> <a href="dedicated.php">hospedagem dedicada <span>A hospedagem dedicada é uma opção de hospedagem da Internet em que um servidor (ou servidores) físico fica dedicado a um único cliente comercial.</span></a></li>
+                                    <li><i class="fab fa-cpanel"></i> <a href="cpanel.php">Revendedores cPanel <span>Gerenciador que permite revender diversas hospedagens e administrar uma carteira própria de clientes.</span></a></li>
+                                </ul>
                             </div>
                         </li>
 
@@ -117,55 +118,55 @@ include("db.php");
                                 <li><a class="dropdown-item" href="contact.php">Contate-nos</a></li>
                             </ul>
                         </li>
-                         <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="about.php">Sobre</a>
                         </li>
-                          <?php 
-       if (isset($_COOKIE["cliente"])) {
-           ?>
-            <li class="nav-item">
-           <a class="nav-link" href="clientarea.php">Minha Conta</a>
-            </li>
-           <?php 
-       }
-        ?>
+                        <?php
+                        if (isset($_COOKIE["cliente"])) {
+                        ?>
+                            <li class="nav-item">
+                                <a class="nav-link" href="clientarea.php">Minha Conta</a>
+                            </li>
+                        <?php
+                        }
+                        ?>
                     </ul>
                 </div>
                 <ul class="header-user-info-coodiv">
-                    <?php 
+                    <?php
                     if (isset($_COOKIE["cliente"])) {
-                           $cliente = $_COOKIE["cliente"];
-                        $selCart = mysqli_query($conn,"SELECT * FROM carrinho WHERE usuario='$cliente' AND estado='nao' ");
-                          ?>
-                           <li onclick="location.href='Bankya/'"><a  href="ordernextvery.php" class="btn btn-sm" style="background: #F0E738; border: 1px solid #F0E738; color: #93278F;"><i class="fa fa-shopping-cart"></i> Carrinho <b>(<?php echo mysqli_num_rows($selCart); ?>)</b></a> 
-                           </li>
-                           <?php 
-                    }else{
-                      ?>
-                           <li class="dropdown"><a role="button" id="header-login-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" style="background: #F0E738; border: 1px solid #F0E738; color: #93278F;"><i class="fa fa-user"></i> Entrar</a> 
-                        <!-- user header dropdown -->
-                        <div class="dropdown-menu coodiv-dropdown-header user-login-dropdown" aria-labelledby="header-login-dropdown">
-                            <form class="user-login-dropdown-form" action="login.php" data-form="validate">
-                                <div class="form-group username">
-                                    <input type="email" name="email" placeholder="E-mail" class="form-control" style="outline: hidden; " autocomplete="none">
-                                    <i class="fas fa-at"></i>
-                                </div>
+                        $cliente = $_COOKIE["cliente"];
+                        $selCart = mysqli_query($conn, "SELECT * FROM carrinho WHERE usuario='$cliente' AND estado='nao' ");
+                    ?>
+                        <li onclick="location.href='Bankya/'"><a href="ordernextvery.php" class="btn btn-sm" style="background: #F0E738; border: 1px solid #F0E738; color: #93278F;"><i class="fa fa-shopping-cart"></i> Carrinho <b>(<?php echo mysqli_num_rows($selCart); ?>)</b></a>
+                        </li>
+                    <?php
+                    } else {
+                    ?>
+                        <li class="dropdown"><a role="button" id="header-login-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" style="background: #F0E738; border: 1px solid #F0E738; color: #93278F;"><i class="fa fa-user"></i> Entrar</a>
+                            <!-- user header dropdown -->
+                            <div class="dropdown-menu coodiv-dropdown-header user-login-dropdown" aria-labelledby="header-login-dropdown">
+                                <form class="user-login-dropdown-form" action="login.php" data-form="validate">
+                                    <div class="form-group username">
+                                        <input type="email" name="email" placeholder="E-mail" class="form-control" style="outline: hidden; " autocomplete="none">
+                                        <i class="fas fa-at"></i>
+                                    </div>
 
-                                <div class="form-group password">
-                                    <input type="password" name="senha" placeholder="Senha" class="form-control" style="outline: hidden; " autocomplete="none">
-                                    <i class="fas fa-lock"></i>
-                                </div>
+                                    <div class="form-group password">
+                                        <input type="password" name="senha" placeholder="Senha" class="form-control" style="outline: hidden; " autocomplete="none">
+                                        <i class="fas fa-lock"></i>
+                                    </div>
 
-                                <button style="background: #F0E738; color: #93278F; border:none;" data-toggle="tooltip" data-placement="left" title="login" class="user-login-dropdown-form-button" type="submit"><i class="fas fa-angle-right"></i></button>
+                                    <button style="background: #F0E738; color: #93278F; border:none;" data-toggle="tooltip" data-placement="left" title="login" class="user-login-dropdown-form-button" type="submit"><i class="fas fa-angle-right"></i></button>
 
-                            </form>
-                        </div>
-                        <!-- end user header dropdown -->
-                    </li>
-                           <?php
+                                </form>
+                            </div>
+                            <!-- end user header dropdown -->
+                        </li>
+                    <?php
                     }
                     ?>
-                   
+
 
                 </ul>
             </div>
@@ -175,86 +176,86 @@ include("db.php");
     <section>
         <br><br>
         <div class="container">
-        <div class="row justify-content-between">
+            <div class="row justify-content-between">
 
-            <div class="col-md-6 side-text-right-container">
+                <div class="col-md-6 side-text-right-container">
                     <h2 class="side-text-right-title" style="color: #93278F;">CONSTRUIR UM WEBSITE OU LOJA PROFISSIONAL AGORA É MAIS FÁCIL</h2>
                     <p class="side-text-right-text">
-                      Crie o seu próprio site perfeito, contratatando o nosso serviço personalizado de criação de sites.
+                        Crie o seu próprio site perfeito, contratatando o nosso serviço personalizado de criação de sites.
                         <br>
-                        <p>
+                    <p>
                 </div>
-                
-            <div class="col-md-6 side-text-right-image text-center d-flex mx-auto flex-column" style="margin-top: -30px;">
-            <div class="mb-auto"></div>
-            <img src="bluiding_banner_img.png" alt="" />
-            <div class="mt-auto"></div>
+
+                <div class="col-md-6 side-text-right-image text-center d-flex mx-auto flex-column" style="margin-top: -30px;">
+                    <div class="mb-auto"></div>
+                    <img src="bluiding_banner_img.png" alt="" />
+                    <div class="mt-auto"></div>
+                </div>
             </div>
         </div>
-        </div>
-         <div class="container">
-        <div class="row justify-content-between">
+        <div class="container">
+            <div class="row justify-content-between">
 
-            <div class="col-md-6 side-text-right-container">
+                <div class="col-md-6 side-text-right-container">
                     <h2 class="side-text-right-title" style="color: #93278F;">Formulario de Solicitação de um Site</h2>
                     <p class="side-text-right-text">
                         * Preencha os campos abaixo.
-                        <p>
-                            <?php 
-                            if (isset($_POST["enviar"])) {
-                                $nomeUser = $_POST["nomeUser"];
-                                $email = $_POST["email"];
-                                $empresa = $_POST["empresa"];
-                                $titulo = $_POST["titulo"];
-                                $descricao = $_POST["descricao"];
+                    <p>
+                        <?php
+                        if (isset($_POST["enviar"])) {
+                            $nomeUser = $_POST["nomeUser"];
+                            $email = $_POST["email"];
+                            $empresa = $_POST["empresa"];
+                            $titulo = $_POST["titulo"];
+                            $descricao = $_POST["descricao"];
 
-                                $insert = "INSERT INTO `solicitacoes`(`nome`, `usuario`, `nome_startup`, `titulo`, `descricao`) VALUES ('$nomeUser','$email','$empresa','$titulo','$descricao')";
-                                $cogVery = mysqli_query($conn,$insert);
-                                if ($cogVery) {
-                                    ?>
-                                     <div class="alert alert-success" role="alert">
-                              Solicitação enviada com sucesso, dentro embreve entraremos em contato...
-                              </div>
-                                    <?php
-                                }
+                            $insert = "INSERT INTO `solicitacoes`(`nome`, `usuario`, `nome_startup`, `titulo`, `descricao`) VALUES ('$nomeUser','$email','$empresa','$titulo','$descricao')";
+                            $cogVery = mysqli_query($conn, $insert);
+                            if ($cogVery) {
+                        ?>
+                    <div class="alert alert-success" role="alert">
+                        Solicitação enviada com sucesso, dentro embreve entraremos em contato...
+                    </div>
+            <?php
                             }
-                             ?>
-                            <form  method="POST">
-                              <div class="mb-3 mt-3">
-                                <label for="email" class="form-label">Seu nome:</label>
-                                <input type="text" class="form-control" id="email" placeholder="Nome Completo" name="nomeUser" required>
-                              </div>
-                              <div class="mb-3">
-                                <label for="pwd" class="form-label">E-mail ou Nº de Telefone:</label>
-                                <input type="text" class="form-control" id="pwd" placeholder="E-mail ou Nº de Telefone:" name="email" required>
-                              </div>
-                               <div class="mb-3">
-                                <label for="pwd" class="form-label">Nome da Sua Empresa/Startup:</label>
-                                <input type="text" class="form-control" id="pwd" placeholder="Nome de sua empresa" name="empresa" required>
-                              </div>
-                               <div class="mb-3">
-                                <label for="pwd" class="form-label">Titulo do Site:</label>
-                                <input type="text" class="form-control" id="pwd" placeholder="Titulo do Site" name="titulo" required>
-                              </div>
-                               <div class="mb-3">
-                                <label for="pwd" class="form-label">Descrição do Site:</label>
-                                <textarea placeholder="Escreve como queres que seja o teu site" class="form-control" rows="4" name="descricao" required></textarea>
-                              </div>
-                              <button type="submit" class="btn btn-primary" name="enviar" style="background: #F0E738; color: #93278F; border: none;">Enviar Solicitação</button>
-                            </form>
-<br>
+                        }
+            ?>
+            <form method="POST">
+                <div class="mb-3 mt-3">
+                    <label for="email" class="form-label">Seu nome:</label>
+                    <input type="text" class="form-control" id="email" placeholder="Nome Completo" name="nomeUser" required>
                 </div>
-                
-            <div class="col-md-6 side-text-right-image text-center d-flex mx-auto flex-column" style="margin-top: -30px;">
-            <div class="mb-auto"></div>
-            <img src="dragdropeditor.png" alt="" />
-            <div class="mt-auto"></div>
+                <div class="mb-3">
+                    <label for="pwd" class="form-label">E-mail ou Nº de Telefone:</label>
+                    <input type="text" class="form-control" id="pwd" placeholder="E-mail ou Nº de Telefone:" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="pwd" class="form-label">Nome da Sua Empresa/Startup:</label>
+                    <input type="text" class="form-control" id="pwd" placeholder="Nome de sua empresa" name="empresa" required>
+                </div>
+                <div class="mb-3">
+                    <label for="pwd" class="form-label">Titulo do Site:</label>
+                    <input type="text" class="form-control" id="pwd" placeholder="Titulo do Site" name="titulo" required>
+                </div>
+                <div class="mb-3">
+                    <label for="pwd" class="form-label">Descrição do Site:</label>
+                    <textarea placeholder="Escreve como queres que seja o teu site" class="form-control" rows="4" name="descricao" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" name="enviar" style="background: #F0E738; color: #93278F; border: none;">Enviar Solicitação</button>
+            </form>
+            <br>
+                </div>
+
+                <div class="col-md-6 side-text-right-image text-center d-flex mx-auto flex-column" style="margin-top: -30px;">
+                    <div class="mb-auto"></div>
+                    <img src="dragdropeditor.png" alt="" />
+                    <div class="mt-auto"></div>
+                </div>
             </div>
-        </div>
         </div>
     </section>
 
-   <section class="footer-section-banner" style="background: #F0E738;">
+    <section class="footer-section-banner" style="background: #F0E738;">
         <div class="container">
             <div class="row free-trial-footer-banner">
                 <div class="col-md-8">
@@ -395,11 +396,11 @@ include("db.php");
     <script src="js/bootstrap.offcanvas.min.js"></script>
     <!-- touchSwipe JavaScript -->
     <script src="js/jquery.touchSwipe.min.js"></script>
-	
+
     <!-- seconde style additionel JavaScript -->
-	<script src="js/particles-code.js"></script>
-	<script src="js/particles.js"></script>
-	<script src="js/smoothscroll.js"></script>
+    <script src="js/particles-code.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/smoothscroll.js"></script>
 </body>
 
 </html>
