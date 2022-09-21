@@ -14,9 +14,10 @@ $ascCli = mysqli_fetch_assoc($selCli);
 if (isset($_POST["enviar"])) {
   $iban = $_POST["iban"];
   $total = $_POST["total"];
-  $idCart = time("h");
+  //$idCart = time("h");
 
-  $isr = "INSERT INTO `carrinhofeito`(`id`, `user`, `total`, `descricao`, `banco`, `iban_conta`) VALUES ('$idCart','$cliente','$total','default','BAI','$iban')";
+  $isr = "INSERT INTO `carrinhofeito`( `user`, `total`, `descricao`, `banco`, `iban_conta`) 
+  VALUES ('$cliente','$total','default','BAI','$iban')";
   $cog = mysqli_query($conn, $isr);
   if ($cog) {
     $upd = mysqli_query($conn, "UPDATE `carrinho` SET `estado`='sim',`carrinho`='$idCart' WHERE usuario='$cliente' ");

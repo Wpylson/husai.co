@@ -3,8 +3,10 @@ include("db.php");
 $email = $_GET["email"];
 $telefone = $_GET["telefone"];
 $nome = $_GET["nome"];
+$sobrenome = $_GET["sobrenome"];
 $senha = $_GET["senha"];
 $conf_senha = $_GET["conf_senha"];
+$termos=$_GET["termos"];
 
 if ($senha != $conf_senha) {
 	  ?>
@@ -23,7 +25,8 @@ if ($senha != $conf_senha) {
          $data = date("Y")+1;
          $validade = date("m").'/'.$data;
 
-        $inser = "INSERT INTO `user_geral`(`nome`, `email`, `telefone`, `senha`,`idBankya`, `saldoBankya`, `validadeBankya`) VALUES ('$nome','$email','$telefone','$senha','$idBankya','0,00','$validade')";
+        $inser = "INSERT INTO `user_geral` (`nome`, `sobrenome`, `email`, `senha`, `telefone`, `dataNascimento`, `genero`, `nif`, `localizacao`, `estado_provincia`, `cod_postal`, `pais`, `concordar_termos`)
+        VALUES ('$nome','$sobrenome','$email','$senha','$telefone',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'$termos')";
          $cogvery = mysqli_query($conn,$inser);
          if ($cogvery) {
          	 ?>

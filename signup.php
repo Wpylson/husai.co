@@ -1,11 +1,13 @@
-<?php 
+<?php
 include("db.php");
 if (isset($_COOKIE["cliente"])) {
-   ?>
-    <script type="text/javascript">window.location.replace("index.php");</script>
-    <?php
+?>
+    <script type="text/javascript">
+        window.location.replace("index.php");
+    </script>
+<?php
 }
- ?>
+?>
 <!doctype html>
 <html lang="pt-pt">
 
@@ -47,57 +49,67 @@ if (isset($_COOKIE["cliente"])) {
     <!-- end preloader -->
 
     <div class="auth-wrapper" style="background: #93278F;">
-        <div class="auth-content" >
+        <div class="auth-content">
             <div class="card">
-            <a class="auth-content-logo-header " href="index.php"><img src="logo2.png" alt=""></a>
-                <div class="card-body text-center shadow-2"  style="border-radius: 10px;">
-                <div class="mt-auto altura-20"></div>    
-                <h3 class="mb-4 auth-login-title" >Informações da conta</h3>
+                <a class="auth-content-logo-header " href="index.php"><img src="logo2.png" alt=""></a>
+                <div class="card-body text-center shadow-2" style="border-radius: 10px;">
+                    <div class="mt-auto altura-20"></div>
+                    <h3 class="mb-4 auth-login-title">Informações da conta</h3>
                     <div class="mt-auto altura-20"></div>
                     <form method="GET" action="criarconta.php">
-                        <?php 
+                        <?php
                         if (isset($_GET["erro"])) {
-                            ?>
-                             <label class="small" style="color: red; display: block; float: left;">*Este usuarios já existe!</label>
-                             <style type="text/css">
-                                 #nof{
+                        ?>
+                            <label class="small" style="color: red; display: block; float: left;">*Este usuarios já existe!</label>
+                            <style type="text/css">
+                                #nof {
                                     border: 1px solid red;
-                                 }
-                             </style>
-                             <?php 
+                                }
+                            </style>
+                        <?php
                         }
-                         ?>
-                         <?php 
-                    if (isset($_GET["errSenha"])) {
-                       ?>
-                             <label class="small" style="color: red; display: block; float: left;">*As senhas devem ser iguais!</label>
-                             <style type="text/css">
-                                 #nof{
+                        ?>
+                        <?php
+                        if (isset($_GET["errSenha"])) {
+                        ?>
+                            <label class="small" style="color: red; display: block; float: left;">*As senhas devem ser iguais!</label>
+                            <style type="text/css">
+                                #nof {
                                     border: 1px solid red;
-                                 }
-                             </style>
-                       <?php 
-                    }
-                     ?>
-                      <div class="input-group mb-3">
-                        <input type="text" class="form-control" id="nof" name="nome" required placeholder="Nome de Usuario" >
-                    </div>
-                    <div class="input-group mb-3">
-                        <input type="telefone" class="form-control" id="nof" name="telefone" required placeholder="Telefone" >
-                    </div>
-                         <div class="input-group mb-3">
-                        <input type="email" class="form-control" id="nof" name="email" required placeholder="E-mail" >
-                    </div>
-                    <div class="input-group mb-4">
-                        <input type="password" class="form-control" id="nof" name="senha" required placeholder="Senha" >
-                    </div>
-                     <div class="input-group mb-4">
-                        <input type="password" class="form-control" id="nof" name="conf_senha" required placeholder="Confirmar Senha" >
-                    </div>
-                    <p class="text-white-muted" style="margin-bottom:5px;">
-                        <input type="checkbox" name="" id="">
-                        Aceitar os <a href="signup.php">Termos de uso</a></p>
-                    <button class="btn btn-entrar shadow-2 mb-4" >Registar-se agora</button>
+                                }
+                            </style>
+                        <?php
+                        }
+                        ?>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" id="nof" name="nome" required placeholder="Nome">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" id="nof" name="sobrenome" required placeholder="Sobrenome">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="telefone" class="form-control" id="nof" name="telefone" required placeholder="Telefone">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" id="nof" name="email" required placeholder="E-mail">
+                        </div>
+                        <div class="input-group mb-4">
+                            <input type="password" class="form-control" id="nof" name="senha" required placeholder="Senha">
+                        </div>
+                        <div class="input-group mb-4">
+                            <input type="password" class="form-control" id="nof" name="conf_senha" required placeholder="Confirmar Senha">
+                        </div>
+                        <p class="text-white-muted" style="margin-bottom:5px;">
+                            <input type="checkbox" name="termos" value="Sim" id="" required>
+                            Aceitar os <a href="signup.php">Termos de uso</a>
+                        </p>
+                        <button class="btn btn-entrar shadow-2 mb-4">Registar-se agora</button>
                     </form>
                     <p class="mb-0 text-white-muted">Já tem uma conta? <a href="signin.php">Entrar</a></p>
                     <div class="mt-auto altura-50"></div>
@@ -130,46 +142,46 @@ if (isset($_COOKIE["cliente"])) {
         <div class="container">
             <div class="row">
                 <div class="col-md-9 quiq-links-footer">
-                  
+
                     <div class="row">
                         <div class="col-md-3">
                             <h5 class="quiq-links-footer-title">Evolua!!</h5>
-                            <p style="text-align:left;">Transforme a sua empresa por meio 
-                        da tecnologia e aumente os seus resultados.</p>
-                        <div class="mb-auto">
-                        <a class="log-btn btn-husai" href="#" >Ver todos os planos</a>
-                    </div>
-                   
-                        </div>
-                       
-                       <div class="col-md-4">
-                       <h5 class="quiq-links-footer-title margem-top-lista-link"><em class="fa fa-angle-right" style="margin-right:5px"></em>Links Rápidos</h5>
-                       <ul class="quiq-links-footer-ul">
-                            <li><a href="#" style="color: #f5f5f5;">anúncios da nossa empresa</a></li>
-                            <li><a href="#" style="color: #f5f5f5;">Base de conhecimento</a></li>
-                            <li><a href="#" style="color: #f5f5f5;">Transferências</a></li>
-                            <li><a href="#" style="color: #f5f5f5;">Status da rede</a></li>
-                            <li><a href="#" style="color: #f5f5f5;">Meus tíquetes de suporte</a></li>
-                            <li><a href="#" style="color: #f5f5f5;">Registrar um novo domínio</a></li>
-                            <li><a href="#" style="color: #f5f5f5;">Transferir novo domínio</a></li>
-                            <li><a href="#" style="color: #f5f5f5;">Produtos de software</a></li>
-                            <li><a href="#" style="color: #f5f5f5;">Hospedagem Dedicada</a></li>
-                        </ul>
-                       </div>
+                            <p style="text-align:left;">Transforme a sua empresa por meio
+                                da tecnologia e aumente os seus resultados.</p>
+                            <div class="mb-auto">
+                                <a class="log-btn btn-husai" href="#">Ver todos os planos</a>
+                            </div>
 
-                       <div class="col-md-4">
-                       <ul class="quiq-links-footer-ul">
-                            <li><a href="#" style="color: #f5f5f5;">Entre em contato conosco</a></li>
-                            <li><a href="#" style="color: #f5f5f5;">Status da rede</a></li>
-                            <li><a href="#" style="color: #f5f5f5;">Esqueceu sua senha?</a></li>
-                            <li><a href="#" style="color: #f5f5f5;">Crie uma conta conosco</a></li>
-                            <li><a href="#" style="color: #f5f5f5;">Faça login na sua conta</a></li>
-                            <li><a href="#" style="color: #f5f5f5;">fazer um novo pagamento</a></li>
-                            <li><a href="#" style="color: #f5f5f5;">Revisão e finalização da compra</a></li>
-                            <li><a href="#" style="color: #f5f5f5;">Área do cliente</a></li>
-                            <li><a href="#" style="color: #f5f5f5;">gerencie sua conta</a></li>
-                        </ul>
-                       </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h5 class="quiq-links-footer-title margem-top-lista-link"><em class="fa fa-angle-right" style="margin-right:5px"></em>Links Rápidos</h5>
+                            <ul class="quiq-links-footer-ul">
+                                <li><a href="#" style="color: #f5f5f5;">anúncios da nossa empresa</a></li>
+                                <li><a href="#" style="color: #f5f5f5;">Base de conhecimento</a></li>
+                                <li><a href="#" style="color: #f5f5f5;">Transferências</a></li>
+                                <li><a href="#" style="color: #f5f5f5;">Status da rede</a></li>
+                                <li><a href="#" style="color: #f5f5f5;">Meus tíquetes de suporte</a></li>
+                                <li><a href="#" style="color: #f5f5f5;">Registrar um novo domínio</a></li>
+                                <li><a href="#" style="color: #f5f5f5;">Transferir novo domínio</a></li>
+                                <li><a href="#" style="color: #f5f5f5;">Produtos de software</a></li>
+                                <li><a href="#" style="color: #f5f5f5;">Hospedagem Dedicada</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4">
+                            <ul class="quiq-links-footer-ul">
+                                <li><a href="#" style="color: #f5f5f5;">Entre em contato conosco</a></li>
+                                <li><a href="#" style="color: #f5f5f5;">Status da rede</a></li>
+                                <li><a href="#" style="color: #f5f5f5;">Esqueceu sua senha?</a></li>
+                                <li><a href="#" style="color: #f5f5f5;">Crie uma conta conosco</a></li>
+                                <li><a href="#" style="color: #f5f5f5;">Faça login na sua conta</a></li>
+                                <li><a href="#" style="color: #f5f5f5;">fazer um novo pagamento</a></li>
+                                <li><a href="#" style="color: #f5f5f5;">Revisão e finalização da compra</a></li>
+                                <li><a href="#" style="color: #f5f5f5;">Área do cliente</a></li>
+                                <li><a href="#" style="color: #f5f5f5;">gerencie sua conta</a></li>
+                            </ul>
+                        </div>
 
                     </div>
                 </div>
@@ -201,13 +213,13 @@ if (isset($_COOKIE["cliente"])) {
                 <div class="col-md-4">
                     <a href="#"><img class="footer-logo-blue" src="logo.png" alt="" /></a>
                     <div class="final-footer-area-text" style="color: #f5f5f5;">
-                    © Copyright 2022 Husai , Todos os direitos reservados
-                </div>
+                        © Copyright 2022 Husai , Todos os direitos reservados
+                    </div>
                     <div class="footer-social-icons">
                         <a href="#" style="background: #F0E738; color: #93278F;"><i class="fab fa-facebook-f" style="line-height:2"></i></a>
-                        <a href="#" style="background: #F0E738; color: #93278F;"><i class="fab fa-twitter"  style="line-height:2"></i></a>
-                        <a href="#" style="background: #F0E738; color: #93278F;"><i class="fab fa-instagram"  style="line-height:2"></i></a>
-                        <a href="#" style="background: #F0E738; color: #93278F;"><i class="fab fa-youtube"  style="line-height:2"></i></a>
+                        <a href="#" style="background: #F0E738; color: #93278F;"><i class="fab fa-twitter" style="line-height:2"></i></a>
+                        <a href="#" style="background: #F0E738; color: #93278F;"><i class="fab fa-instagram" style="line-height:2"></i></a>
+                        <a href="#" style="background: #F0E738; color: #93278F;"><i class="fab fa-youtube" style="line-height:2"></i></a>
                     </div>
                 </div>
 

@@ -227,3 +227,42 @@
     color: #4c5b63;
     z-index: 1
 }
+
+.select-input{
+    height: 45px;
+    width: 100%;
+    padding: 0 20px 0;
+    font-weight: 100;
+    font-size: 13px;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid #eff0f1;
+    margin-bottom: 10px;
+    color: #5a5967;
+}
+
+.text-email-input{
+    height: 45px;
+    width: 100%;
+    padding: 0 20px 0;
+    font-weight: 100;
+    font-size: 13px;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid #eff0f1;
+    margin-bottom: 10px;
+}
+
+/* links client area */
+.link-client-area{
+    font-size: inherit;
+    color: #212529;
+    text-decoration: nome;
+}
+.link-client-area:hover{
+    color: #93278F;
+    text-decoration: none;
+}
+.link-client-area.active{
+    color: #93278F;
+}

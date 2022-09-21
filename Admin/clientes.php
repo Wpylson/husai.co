@@ -261,7 +261,7 @@ $ascUser = mysqli_fetch_assoc($selUser);
                     </thead>
                     <tbody>
                         <?php 
-                        $selped = mysqli_query($conn,"SELECT * FROM user_geral ORDER BY id desc ");
+                        $selped = mysqli_query($conn,"SELECT * FROM user_geral ORDER BY idUserGeral desc ");
                         while ($ascPed = mysqli_fetch_assoc($selped)) {
                             ?>
                            <tr class="gradeX">
@@ -270,7 +270,7 @@ $ascUser = mysqli_fetch_assoc($selUser);
                             <td><?php echo $ascPed["telefone"]; ?></td>
                             <td style="text-transform: uppercase;"><em class="fa fa-credit-card"></em> <?php echo $ascPed["idBankya"]; ?></td>
                             <td><span class="badge badge-primary">Ativo <em class="fa fa-check"></em></span></td>
-                            <td class="center" style="text-align: center;"><a href="clientes.php?ver=<?php echo $ascPed["id"]; ?>"><i class="fa fa-eye text-info"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="clientes.php?eliminar=<?php echo $ascPed["id"]; ?>"><i class="fa fa-times text-danger"></i></a></td>
+                            <td class="center" style="text-align: center;"><a href="clientes.php?ver=<?php echo $ascPed["idUserGeral"]; ?>"><i class="fa fa-eye text-info"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="clientes.php?eliminar=<?php echo $ascPed["idUserGeral"]; ?>"><i class="fa fa-times text-danger"></i></a></td>
                            </tr>
                     <?php 
                         }

@@ -202,11 +202,10 @@ include("db.php");
         <main class="container mb-auto">
             <div class="row">
                 <div class="col-md-5 text-center">
-                    <h3 class="mt-3 title-header">Criação de Sites</h3>
+                    <h3 class="mt-3 title-header">Criação de Aplicativo</h3>
                     <p class="side-text-center-text" style="color:#fff">
-                        A <strong>HUSAI</strong> vai criar um site incrível para sua empresa. Trabalhamos com um equipa especilaizada
-                        em desenvolvimento de sistemas web para o seu site tenha um visual incrível e tecnologias
-                        avançadas para fazer crescer o seu negócio através da internet.
+                        A <strong>HUSAI</strong> conta com uma equipa proativa e criativa. Vamos criar o seu aplicativo com design exclusivo e responsivo para Android ou iOs ou ambos.
+                        
                     </p>
                     <div id="" class="mr-tp-20 custom-change">
                         <a class="log-btn btn-fale-connosco" href="#solicitacao"><em class="fa fa-phone" style="margin-right:5px"></em>Fale connosco </a>

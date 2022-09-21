@@ -1,15 +1,17 @@
 <?php
 include("db.php");
 $cliente = $_COOKIE["cliente"];
+$id = $_GET['id'];
 if (!isset($_COOKIE["cliente"])) {
 ?>
     <script type="text/javascript">
         window.location.replace("signin.php");
     </script>
+
 <?php
+
 }
-$selCli = mysqli_query($conn, "SELECT * FROM user_geral WHERE email='$cliente' ");
-$numrow=mysqli_num_fields($selCli);
+$selCli = mysqli_query($conn, "SELECT * FROM user_geral WHERE idUserGeral='$id' ");
 $ascCli = mysqli_fetch_assoc($selCli);
 ?>
 <!doctype html>
@@ -308,99 +310,105 @@ $ascCli = mysqli_fetch_assoc($selCli);
         <!------ Include the above in your HEAD tag ---------->
 
         <div class="container emp-profile">
-            <form method="post">
-                <div class="row justify-content-center">
 
-                    <div class="profile-img user-header">
-                        <img src="man_5-512.webp" alt="" style="width:100px;height:100px;" />
-                        <h5>
-                            <?php echo $ascCli["nome"] . " " . $ascCli["sobrenome"]; ?>
-                        </h5>
-                        <h6 style="color: #93278F;">
-                            <?php echo $ascCli["email"]; ?>
-                        </h6>
-                        <p style="font-size: 10px;"><a href="clientarea.php" class="link-client-area active">Perfil do utilizador</a> | <a href="edit_cliente.php?id=<?php echo $ascCli["idUserGeral"]; ?>" class="link-client-area">Editar Informações</a> </p>
-                    </div>
+            <div class="row justify-content-center">
+
+                <div class="profile-img user-header">
+                    <img src="man_5-512.webp" alt="" style="width:100px;height:100px;" />
+                    <h5>
+                        <?php echo $ascCli["nome"]; ?>
+                    </h5>
+                    <h6 style="color: #93278F;">
+                        <?php echo $ascCli["email"]; ?>
+                    </h6>
+                    <p style="font-size: 10px;"><a href="clientarea.php" class="link-client-area ">Perfil do utilizador</a> | <a href="edit_cliente.php?id=<?php echo $ascCli["idUserGeral"]; ?>" class="link-client-area active">Editar Informações</a> </p>
                 </div>
-                <!-- <div class="col-md-2">
+            </div>
+            <!-- <div class="col-md-2">
                         <em class="fa fa-cog" style="color: #93278F;"></em>
                     </div> -->
 
-                <div class="row justify-content-left">
-                    <div class="col-md-12">
-                        <div class="profile-head">
+            <div class="row justify-content-left">
+                <div class="col-md-12">
+                    <div class="profile-head">
 
-                            <?php
-                            
-                            if ($numrow <= 8) {
-                                echo "$numrow";
+                    <?php
+                   
+                            if (isset($_POST['btn_save_passe'])) {
                             ?>
-                                <div class="alert alert-warning" role="alert">
-                                    Informações de utilizador não estão completas. Por favor, clica <a href="edit_cliente.php?id=<?php echo $ascCli["idUserGeral"]; ?>" class="link-client-area active">aqui</a> para completar.
+                                <div class="alert alert-success" role="alert">
+                                   Mensagem
                                 </div>
                             <?php
-                            } ?>
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true" style="color: #93278F;">Dados Pessoais</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false" style="color: #93278F;">Mensagens</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="tab-compras" data-toggle="tab" href="#compras" role="tab" aria-controls="compras" aria-selected="false" style="color: #93278F;">Compras</a>
-                                </li>
-                            </ul>
-                        </div>
+                            }
+
+                            ?>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true" style="color: #93278F;">Dados Pessoais</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false" style="color: #93278F;">Palavra-passe</a>
+                            </li>
+
+                        </ul>
                     </div>
-                    <div class="col-md-12">
-                        <div class="tab-content profile-tab" id="myTabContent">
-                            <div class="tab-pane fade show active row" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                </div>
+
+                <div class="col-md-12">
+                    <div class="tab-content profile-tab" id="myTabContent">
+                        <div class="tab-pane fade show active row" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <form method="post">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="row user-info">
                                             <div class="col-md-12">
                                                 <div class="field input-field">
                                                     <p style="font-size: 12px;color: #000;margin: 0;"><em class="fa fa-user" style="margin-right:5px"></em>Nome Próprio</p>
-                                                    <p class="data-info"><?php echo $ascCli["nome"]; ?></p>
+                                                    <input class="text-email-input" type="text" id="nome" name="nome" value="<?php echo $ascCli["nome"]; ?>" placeholder="escreve o nome da sua empresa" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="field input-field">
                                                     <p style="font-size: 12px;color: #000;margin: 0;"><em class="fa fa-user" style="margin-right:5px"></em>Sobrenome</p>
-                                                    <p class="data-info"><?php echo $ascCli["sobrenome"]; ?></p>
+                                                    <input class="text-email-input" type="text" id="sobre_nome" name="sobre_nome" value="<?php echo $ascCli["sobrenome"]; ?>" placeholder="escreve o seu sobrenome" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="field input-field">
                                                     <p style="font-size: 12px;color: #000;margin: 0;"><em class="fa fa-calendar" style="margin-right:5px"></em>Data Nascimento</p>
-                                                    <p class="data-info"><?php echo $ascCli["dataNascimento"]; ?></p>
+                                                    <input class="text-email-input" type="date" id="data_nascimento" name="data_nascimento" value="<?php echo $ascCli["dataNascimento"]; ?>" required>
                                                 </div>
                                             </div>
                                             <div class="row" style="margin-left:0px ;">
                                                 <div class="col-md-6">
                                                     <div class="field input-field">
                                                         <p style="font-size: 12px;color: #000;margin: 0;"><em class="fa fa-male" style="margin-right:5px"></em>Gênero</p>
-                                                        <p class="data-info"><?php echo $ascCli["nome"]; ?></p>
+                                                        <select class="select-input" id="genero" name="genero" required>
+                                                            <option value="">seleciona o seu gênero</option>
+                                                            <option value="Maculino">Maculino</option>
+                                                            <option value="Femenino">Femenino</option>
+                                                            <option value="Outro">Outro</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="field input-field">
                                                         <p style="font-size: 12px;color: #000;margin: 0;"><em class="fa fa-list" style="margin-right:5px"></em>NIF</p>
-                                                        <p class="data-info"><?php echo $ascCli["nif"]; ?></p>
+                                                        <input class="text-email-input" type="text" id="nif" name="nif" value="<?php echo $ascCli["nif"]; ?>" placeholder="escreve o seu NIF" required>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="field input-field">
                                                     <p style="font-size: 12px;color: #000;margin: 0;"><em class="fa fa-at" style="margin-right:5px"></em>E-mail</p>
-                                                    <p class="data-info"><?php echo $ascCli["email"]; ?></p>
+                                                    <input class="text-email-input" type="text" id="email" name="email" value="<?php echo $ascCli["email"]; ?>" placeholder="escreve o seu e-mail" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="field input-field">
                                                     <p style="font-size: 12px;color: #000;margin: 0;"><em class="fa fa-phone" style="margin-right:5px"></em>Número de Telefone</p>
-                                                    <p class="data-info"><?php echo $ascCli["telefone"]; ?></p>
+                                                    <input class="text-email-input" type="text" id="telefone" name="telefone" value="<?php echo $ascCli["telefone"]; ?>" placeholder="escreve o seu número de telefone" required>
                                                 </div>
                                             </div>
                                         </div>
@@ -411,131 +419,89 @@ $ascCli = mysqli_fetch_assoc($selCli);
                                             <div class="col-md-12">
                                                 <div class="field input-field">
                                                     <p style="font-size: 12px;color: #000;margin: 0;"><em class="fa fa-lacalization" style="margin-right:5px"></em>Localização</p>
-                                                    <p class="data-info"><?php echo $ascCli["localizacao"]; ?></p>
+                                                    <input class="text-email-input" type="text" id="localizacao" name="localizacao" value="<?php echo $ascCli["localizacao"]; ?>" placeholder="ex: Moçâmedes, Urbanização 5 de Abril" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="field input-field">
                                                     <p style="font-size: 12px;color: #000;margin: 0;"><em class="fa fa-globe-state" style="margin-right:5px"></em>Estado/Província</p>
-                                                    <p class="data-info"><?php echo $ascCli["estado_provincia"]; ?></p>
+                                                    <input class="text-email-input" type="text" id="estado_provincia" name="estado_provincia" value="<?php echo $ascCli["estado_provincia"]; ?>" placeholder="escreve o seu estado/província" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="field input-field">
                                                     <p style="font-size: 12px;color: #000;margin: 0;"><em class="fa fa-globe-africa" style="margin-right:5px"></em>Código Postal</p>
-                                                    <p class="data-info"><?php echo $ascCli["cod_postal"]; ?></p>
+                                                    <input class="text-email-input" type="text" id="cod_postal" name="cod_postal" value="<?php echo $ascCli["cod_postal"]; ?>" placeholder="escreve o seu código postal">
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="field input-field">
                                                     <p style="font-size: 12px;color: #000;margin: 0;"><em class="fa fa-globe-africa" style="margin-right:5px"></em>País</p>
-                                                    <p class="data-info" style=""><?php echo $ascCli["pais"]; ?></p>
+                                                    <select class="select-input" id="pais" name="pais" required>
+                                                        <option>seleciona o seu país</option>
+                                                        <option value="Angola">Angola</option>
+                                                        <option value="Namíbia">Namíbia</option>
+                                                        <option value="Brasil">Brasil</option>
+                                                    </select>
                                                 </div>
                                             </div>
 
+
                                         </div>
 
-                                        <!-- end form -->
+
                                     </div>
                                 </div>
                                 <div class="row mt-20-mb-20">
                                     <div class="col-md-6">
-                                        <a class="btn-profile" href="edit_cliente.php?id=<?php echo $ascCli["idUserGeral"]; ?>"> <em class="fa fa-edit" style="margin-right:5px"></em>Editar Informações</a>
+                                        <button type="submit" class="btn-profile" name="btn_editar"> <em class="fa fa-save" style="margin-right:5px"></em>Salvar</button>
                                     </div>
+
                                 </div>
-                            </div>
+                            </form>
+                        </div>
 
-                            <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
 
-                                <?php
-                                $selMsg = mysqli_query($conn, "SELECT * FROM mensagens WHERE para='$cliente' ");
-                                if (mysqli_num_rows($selMsg) >= 1) {
-                                    while ($ascMsg = mysqli_fetch_assoc($selMsg)) {
-                                ?>
-                                        <table class="table table-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th>De</th>
-                                                    <th>Texto</th>
-                                                    <th>OPC</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr style="cursor: pointer;">
-                                                    <td onclick="location.href='contact.php'"><strong><?php echo $ascMsg["email"]; ?></strong></td>
-                                                    <td onclick="location.href='contact.php'"><?php echo $ascMsg["resposta"]; ?></td>
-                                                    <td><button class="btn btn-sm btn-danger"><em class="fa fa-times"></em></button></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    <?php
-                                    }
-                                } else {
-                                    ?>
-                                    <div class="alert alert-danger" role="alert">
-                                        <em class="fa fa-spinner fa-spin"></em> Não encontramos nenhuma mensagem para ti...
+                            <form method="post">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row user-info">
+                                            <div class="col-md-12">
+                                                <div class="field input-field">
+                                                    <p style="font-size: 12px;color: #000;margin: 0;"><em class="fa fa-lock" style="margin-right:5px"></em>Palavra-passe</p>
+                                                    <input class="text-email-input" type="password" id="palavra_passe" name="palavra_passe" placeholder="escreve a sua palavra-passe" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="field input-field">
+                                                    <p style="font-size: 12px;color: #000;margin: 0;"><em class="fa fa-lock" style="margin-right:5px"></em>Nova palavra-passe</p>
+                                                    <input class="text-email-input" type="password" id="nova_passe" name="nova_passe" placeholder="escreve nova palavra-passe" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="field input-field">
+                                                    <p style="font-size: 12px;color: #000;margin: 0;"><em class="fa fa-lock" style="margin-right:5px"></em>Confirma nova palavra-passe</p>
+                                                    <input class="text-email-input" type="password" id="confim_nova_passe" name="confim_nova_passe" placeholder="volta  escrever a nova palavra-passe" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end form -->
                                     </div>
-                                <?php
-                                }
-                                ?>
+
+                                </div>
+                                <div class="row mt-20-mb-20">
+
+                                    <button type="submit" class="btn-profile" name="btn_save_passe"> <em class="fa fa-save" style="margin-right:5px"></em>Salvar</button>
 
 
-
-                            </div>
-
-                            <div class="tab-pane fade" id="compras" role="tabpanel" aria-labelledby="tab-compras">
-
-                                <?php
-                                $selcartFeito = mysqli_query($conn, "SELECT * FROM carrinhofeito WHERE user='$cliente' ");
-                                if (mysqli_num_rows($selcartFeito) >= 1) {
-                                    while ($asccartF = mysqli_fetch_assoc($selcartFeito)) {
-                                ?>
-                                        <table class="table table-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th>ID</th>
-                                                    <th>Data</th>
-                                                    <th>Total</th>
-                                                    <th>Estado</th>
-                                                    <th>OPC</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr style="cursor: pointer;">
-                                                    <td onclick="location.href='verProdCart.php?idCart=<?php echo $asccartF["id"]; ?>'"><strong><?php echo $asccartF["id"]; ?></strong></td>
-                                                    <td onclick="location.href='verProdCart.php?idCart=<?php echo $asccartF["id"]; ?>'"><?php echo $asccartF["data"]; ?></td>
-                                                    <td onclick="location.href='verProdCart.php?idCart=<?php echo $asccartF["id"]; ?>'"><?php echo $asccartF["total"]; ?></td>
-                                                    <td onclick="location.href='verProdCart.php?idCart=<?php echo $asccartF["id"]; ?>'"><?php if ($asccartF["estado"] == "nao") {
-                                                                                                                                        ?>
-                                                            <b style="color: red;"><em class="fa fa-spinner fa-spin"></em> processando</b>
-                                                        <?php
-                                                                                                                                        } elseif ($asccartF["estado"] == "sim") {
-                                                        ?>
-                                                            <b style="color: green;"><em class="fa fa-check"></em> processado</b>
-                                                        <?php
-                                                                                                                                        } ?>
-                                                    </td>
-                                                    <td><button class="btn btn-sm btn-danger"><em class="fa fa-times"></em></button></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    <?php
-                                    }
-                                } else {
-                                    ?>
-                                    <div class="alert alert-danger" role="alert">
-                                        <em class="fa fa-spinner fa-spin"></em> Ainda não efetuaste nenhuma compra, por favor selecione produtos no seu carrinho...
-                                    </div>
-                                <?php
-                                }
-                                ?>
-
-                            </div>
-
-
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
+                </form>
+            </div>
             </form>
         </div>
     </section>

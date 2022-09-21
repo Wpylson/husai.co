@@ -161,8 +161,8 @@ $ascUser = mysqli_fetch_assoc($selUser);
                     	if (mysqli_num_rows($selSoli)>=1) {
                     		while ($ascSoli = mysqli_fetch_assoc($selSoli)) {
                     			?>
-                    			 <li style="cursor: pointer;" onclick="location.href='versolicitacoes.php?idSoli=<?php echo $ascSoli["id"]; ?>'">
-                            <a href="versolicitacoes.php?idSoli=<?php echo $ascSoli["id"]; ?>" class="dropdown-item">
+                    			 <li style="cursor: pointer;" onclick="location.href='versolicitacoes.php?idSoli=<?php echo $ascSoli['idSolicitacao']; ?>'">
+                            <a href="versolicitacoes.php?idSoli=<?php echo $ascSoli["idSolicitacao"]; ?>" class="dropdown-item">
                                 <div>
                                     <i class="fa fa-envelope fa-fw"></i> Chegou uma nova solicitação de <?php echo $ascSoli["nome"]; ?>
                                     <span class="float-right text-muted small"><?php echo $ascSoli["data"]; ?></span>

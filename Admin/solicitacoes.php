@@ -271,15 +271,15 @@ $ascUser = mysqli_fetch_assoc($selUser);
                                     $selSoliGeral = mysqli_query($conn,"SELECT * FROM solicitacoes WHERE estado='nao' ");
                                     if (mysqli_num_rows($selSoliGeral)>=1) {
                                        while ($ascSoliGeral = mysqli_fetch_assoc($selSoliGeral)) {
-                                        $userAs = $ascSoliGeral["usuario"];
-                                        $selUsers = mysqli_query($conn,"SELECT * FROM user_geral WHERE email='$userAs' ");
+                                        $userAs = $ascSoliGeral["idUserGeral"];
+                                        $selUsers = mysqli_query($conn,"SELECT * FROM user_geral WHERE idUserGeral='$userAs' ");
                                         $ascUsers = mysqli_fetch_assoc($selUsers);
                                            ?>
                                            <tr>
                                            <td>Projeto - <?php echo $ascSoliGeral["titulo"]; ?></td>
                                             <td><?php echo $ascSoliGeral["nome"]; ?></td>
                                             <td><?php echo $ascUsers["telefone"]; ?></td>
-                                            <td><?php echo $ascSoliGeral["nome_startup"]; ?></td>
+                                            <td><?php echo $ascSoliGeral["nome_empresa"]; ?></td>
                                             <td><?php echo $ascSoliGeral["descricao"]; ?></td>
                                             <td>SIM</td>
                                             <td><?php echo $ascSoliGeral["data"]; ?></td>

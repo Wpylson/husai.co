@@ -118,7 +118,7 @@
                                         <a href="hosting.php">
                                             <i class="bredhicon-sun" style="background: #F0E738; color: #93278F;"></i>
                                             <h5>Hospedagem</h5>
-                                            <p>A hospedagem é um espaço no servidor que armazena todos os arquivos que compõem um site para deixá-lo acessível na internet.</p>
+                                            <!-- <p>A hospedagem é um espaço no servidor que armazena todos os arquivos que compõem um site para deixá-lo acessível na internet.</p> -->
                                         </a>
                                     </div>
 
@@ -126,7 +126,7 @@
                                         <a href="ssl.php">
                                             <i class="bredhicon-award-empty" style="background: #F0E738; color: #93278F;"></i>
                                             <h5>Certificado SSL</h5>
-                                            <p>Certificado SSL é um certificado digital que autentica a identidade de um site e possibilita uma conexão criptografada.</p>
+                                            <!-- <p>Certificado SSL é um certificado digital que autentica a identidade de um site e possibilita uma conexão criptografada.</p> -->
                                         </a>
                                     </div>
 
@@ -134,15 +134,21 @@
                                         <a href="websites.php">
                                             <i class="bredhicon-steering-wheel" style="background: #F0E738; color: #93278F;"></i>
                                             <h5>Criação de Site</h5>
-                                            <p> um site funciona como uma porta de entrada da sua empresa na internet, baseado neste conjunto de páginas que precisam de uma estrutura para ficar armazenada e de um nome de domínio.</p>
+                                            <!-- <p> um site funciona como uma porta de entrada da sua empresa na internet, baseado neste conjunto de páginas que precisam de uma estrutura para ficar armazenada e de um nome de domínio.</p> -->
                                         </a>
                                     </div>
-
+                                    <div class="p-2 bd-highlight">
+                                        <a href="criacao_app.php">
+                                            <i class="bredhicon-mobile" style="background: #F0E738; color: #93278F;"></i>
+                                            <h5>Criação de Aplicativos</h5>
+                                            <!-- <p> um site funciona como uma porta de entrada da sua empresa na internet, baseado neste conjunto de páginas que precisam de uma estrutura para ficar armazenada e de um nome de domínio.</p> -->
+                                        </a>
+                                    </div>
                                     <div class="p-2 bd-highlight">
                                         <a href="domains.php">
                                             <i class="bredhicon-headphones" style="background: #F0E738; color: #93278F;"></i>
                                             <h5>Domínios</h5>
-                                            <p>O domínio geralmente usa o nome da sua organização e um sufixo padrão da Internet, como minhaempresa.com ou universidadeestadual.edu.</p>
+                                            <!-- <p>O domínio geralmente usa o nome da sua organização e um sufixo padrão da Internet, como minhaempresa.com ou universidadeestadual.edu.</p> -->
                                         </a>
                                     </div>
 
