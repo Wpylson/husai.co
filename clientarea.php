@@ -440,7 +440,7 @@ $ascCli = mysqli_fetch_assoc($selCli);
                                 </div>
                                 <div class="row mt-20-mb-20">
                                     <div class="col-md-6">
-                                        <a class="btn-profile" href="edit_cliente.php?id=<?php echo $ascCli["idUserGeral"]; ?>"> <em class="fa fa-edit" style="margin-right:5px"></em>Editar Informações</a>
+                                        <a class="btn-profile" href="edit_cliente.php"> <em class="fa fa-edit" style="margin-right:5px"></em>Editar Informações</a>
                                     </div>
                                 </div>
                             </div>

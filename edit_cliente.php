@@ -1,7 +1,6 @@
 <?php
 include("db.php");
 $cliente = $_COOKIE["cliente"];
-$id = $_GET['id'];
 if (!isset($_COOKIE["cliente"])) {
 ?>
     <script type="text/javascript">
@@ -11,7 +10,7 @@ if (!isset($_COOKIE["cliente"])) {
 <?php
 
 }
-$selCli = mysqli_query($conn, "SELECT * FROM user_geral WHERE idUserGeral='$id' ");
+$selCli = mysqli_query($conn, "SELECT * FROM user_geral WHERE email='$cliente' ");
 $ascCli = mysqli_fetch_assoc($selCli);
 ?>
 <!doctype html>
@@ -321,7 +320,7 @@ $ascCli = mysqli_fetch_assoc($selCli);
                     <h6 style="color: #93278F;">
                         <?php echo $ascCli["email"]; ?>
                     </h6>
-                    <p style="font-size: 10px;"><a href="clientarea.php" class="link-client-area ">Perfil do utilizador</a> | <a href="edit_cliente.php?id=<?php echo $ascCli["idUserGeral"]; ?>" class="link-client-area active">Editar Informações</a> </p>
+                    <p style="font-size: 10px;"><a href="clientarea.php" class="link-client-area ">Perfil do utilizador</a> | <a href="edit_cliente.php" class="link-client-area active">Editar Informações</a> </p>
                 </div>
             </div>
             <!-- <div class="col-md-2">
@@ -454,7 +453,7 @@ $ascCli = mysqli_fetch_assoc($selCli);
                                 </div>
                                 <div class="row mt-20-mb-20">
                                     <div class="col-md-6">
-                                        <button type="submit" class="btn-profile" name="btn_editar"> <em class="fa fa-save" style="margin-right:5px"></em>Salvar</button>
+                                        <button type="submit" class="btn-profile" name="btn_editar"> <em class="fa fa-save" style="margin-right:5px"></em>Salvar1</button>
                                     </div>
 
                                 </div>
@@ -492,7 +491,7 @@ $ascCli = mysqli_fetch_assoc($selCli);
                                 </div>
                                 <div class="row mt-20-mb-20">
 
-                                    <button type="submit" class="btn-profile" name="btn_save_passe"> <em class="fa fa-save" style="margin-right:5px"></em>Salvar</button>
+                                    <input type="submit" class="btn-profile" name="btn_save_passe"  value="Salvar"> <em class="fa fa-save" style="margin-right:5px"></em>
 
 
                                 </div>
