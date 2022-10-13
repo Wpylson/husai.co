@@ -331,17 +331,43 @@ $ascCli = mysqli_fetch_assoc($selCli);
                 <div class="col-md-12">
                     <div class="profile-head">
 
-                    <?php
-                   
-                            if (isset($_POST['btn_save_passe'])) {
-                            ?>
-                                <div class="alert alert-success" role="alert">
-                                   Mensagem
-                                </div>
-                            <?php
-                            }
+                        <?php
 
-                            ?>
+                        if (isset($_SESSION['success_edit_cliente'])) {
+                            echo $_SESSION['success_edit_cliente'];
+                            unset($_SESSION['success_edit_cliente']);
+                        }
+
+                        if (isset($_SESSION['erro_passe_diferentes'])) {
+                            echo $_SESSION['erro_passe_diferentes'];
+                            unset($_SESSION['erro_passe_diferentes']);
+                        }
+
+                        if (isset($_SESSION['success_nova_passe'])) {
+                            echo $_SESSION['success_nova_passe'];
+                            unset($_SESSION['success_nova_passe']);
+                        }
+
+                        if (isset($_SESSION['erro_nova_passe'])) {
+                            echo $_SESSION['erro_nova_passe'];
+                            unset($_SESSION['erro_nova_passe']);
+                        }
+
+                        if (isset($_SESSION['erro_edit_passe'])) {
+                            echo $_SESSION['erro_edit_passe'];
+                            unset($_SESSION['erro_edit_passe']);
+                        }
+
+                        if (isset($_GET["erro"])) {
+                        ?>
+                            <div class="alert alert-error" role="alert">
+                                Dadaos actualizados com sucesso!
+                            </div>
+                        <?php
+                        }
+
+
+                        ?>
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true" style="color: #93278F;">Dados Pessoais</a>
@@ -357,7 +383,7 @@ $ascCli = mysqli_fetch_assoc($selCli);
                 <div class="col-md-12">
                     <div class="tab-content profile-tab" id="myTabContent">
                         <div class="tab-pane fade show active row" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                            <form method="post">
+                            <form method="GET" action="controllers/edit_cliente_controller.php">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="row user-info">
@@ -453,7 +479,8 @@ $ascCli = mysqli_fetch_assoc($selCli);
                                 </div>
                                 <div class="row mt-20-mb-20">
                                     <div class="col-md-6">
-                                        <button type="submit" class="btn-profile" name="btn_editar"> <em class="fa fa-save" style="margin-right:5px"></em>Salvar1</button>
+                                        <input type="hidden" name="idUserGeral" value="<?php echo $ascCli["idUserGeral"] ?>">
+                                        <button type="submit" class="btn-profile" name="btn_editar"> <em class="fa fa-save" style="margin-right:5px"></em>Salvar</button>
                                     </div>
 
                                 </div>
@@ -462,7 +489,7 @@ $ascCli = mysqli_fetch_assoc($selCli);
 
                         <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
 
-                            <form method="post">
+                            <form method="post" action="controllers/edit_passe_controllers.php">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="row user-info">
@@ -481,6 +508,7 @@ $ascCli = mysqli_fetch_assoc($selCli);
                                             <div class="col-md-12">
                                                 <div class="field input-field">
                                                     <p style="font-size: 12px;color: #000;margin: 0;"><em class="fa fa-lock" style="margin-right:5px"></em>Confirma nova palavra-passe</p>
+                                                    <input type="hidden" name="idUserGeral" value="<?php echo $ascCli["idUserGeral"] ?>">
                                                     <input class="text-email-input" type="password" id="confim_nova_passe" name="confim_nova_passe" placeholder="volta  escrever a nova palavra-passe" required>
                                                 </div>
                                             </div>
@@ -491,7 +519,7 @@ $ascCli = mysqli_fetch_assoc($selCli);
                                 </div>
                                 <div class="row mt-20-mb-20">
 
-                                    <input type="submit" class="btn-profile" name="btn_save_passe"  value="Salvar"> <em class="fa fa-save" style="margin-right:5px"></em>
+                                    <button class="btn-profile" name="btn_save_passe" value="Salvar"> <em class="fa fa-save" style="margin-right:5px"></em>Salvar Passe</button:>
 
 
                                 </div>

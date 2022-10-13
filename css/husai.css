@@ -194,7 +194,7 @@
 }
 
 .btn-profile{
-    width: 130px;
+    width: auto;
     height: 40px;
     border: 0;
     background: #F0E738;
@@ -202,7 +202,7 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
-    line-height: 40px;
+    line-height: 22px;
     cursor: pointer;
     outline: none;
     border-radius: 50px;

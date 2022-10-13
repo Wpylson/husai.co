@@ -428,6 +428,7 @@ include("db.php");
                        
                         $cogVery = mysqli_query($conn, $insert);
                         if ($cogVery) {
+                            header("Location: pedido_site.php");
                     ?>
                             <div class="alert alert-success" role="alert">
                                 A sua solicitação foi enviada com sucesso, enviaremos uma resposta dentro embreve...
