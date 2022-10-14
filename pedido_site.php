@@ -40,7 +40,7 @@ include("db.php");
     </div>
     <!-- end modal video -->
 
-    <div class="preloader"> -->
+    <div class="preloader"> 
         <!-- start preloader -->
          <div class="preloader-container">
             <img src="icone.png" width="50">
@@ -405,53 +405,27 @@ include("db.php");
                 </div>
                 <div class="col-md-7">
                     <?php
-                     if (isset($_POST["enviar"])) {
-                        $usuarioLogado = $_COOKIE["cliente"];
-                        $sql = "SELECT * FROM user_geral WHERE email='$usuarioLogado'";
-                        $result=mysqli_query($conn,$sql);
-                        $rows=mysqli_fetch_assoc($result);
-
-                        
-                        
-                        $idUsuario= $rows['idUserGeral'];
-                        $nome = $_POST["nome"];
-                        $email = $_POST["email"];
-                        $empresa = $_POST["empresa"];
-                        $tipoEmpresa =$_POST["tipo_empresa"];
-                        $titulo = $_POST["titulo"];
-                        $tipo_site=$_POST['tipo_site'];
-                        $descricao = $_POST["descricao"];
-
-                        $insert = "INSERT INTO `solicitacoes`( `nome`, `email_empresa`, `idUserGeral`,
-                         `nome_empresa`, `tipo_empresa`, `titulo`, `tipo_site`, `descricao` ) 
-                        VALUES ('$nome','$email','$idUsuario','$empresa','$tipoEmpresa','$titulo','$tipo_site','$descricao')";
-                       
-                        $cogVery = mysqli_query($conn, $insert);
-                        if ($cogVery) {
-                            header("Location: pedido_site.php");
-                    ?>
-                            <div class="alert alert-success" role="alert">
-                                A sua solicitação foi enviada com sucesso, enviaremos uma resposta dentro embreve...
-                            </div>
-                    <?php
+                         if (isset($_SESSION['solicitacao'])) {
+                            echo $_SESSION['solicitacao'];
+                            unset($_SESSION['solicitacao']);
                         }
-                        else{
-                            header("Location: pedido_site.php");
-                            ?>
-                             <div class="alert alert-error" role="alert">
-                                Erro ao fazer a sua solicitação! 
-                            </div>
-                            <?php
+
+                        if (isset($_SESSION['erro_solicitacao'])) {
+                            echo $_SESSION['erro_solicitacao'];
+                            unset($_SESSION['erro_solicitacao']);
                         }
-                    }
                     ?>
-                    <form class="row form-contain-home contact-page-form-send" method="POST">
+                    <form class="row form-contain-home contact-page-form-send" method="POST" action="controllers/solicitacao_controller.php">
                         <!-- start form -->
                         <h5>Faça a sua solicitação <span>Preencha todos os campos</span></h5>
                         <div id="form-messages"></div>
                         <!-- form message -->
+                        <?php 
+                         if (isset($_COOKIE["cliente"])) {
 
-                        <div class="col-md-12">
+                         }else{
+                            ?>
+                            <div class="col-md-12">
                             <!-- start col -->
                             <div class="field input-field">
                                 <input class="form-contain-home-input" type="text" id="name" name="nome" placeholder="escreva seu nome" required>
@@ -469,6 +443,19 @@ include("db.php");
                                 <i class="far fa-envelope" style="color: #93278F;"></i>
                             </div>
                         </div>
+
+                        <div class="col-md-12">
+                            <!-- start col -->
+                            <div class="field input-field">
+                                <input class="form-contain-home-input" type="text" id="telefone" name="telefone" placeholder="escreve seu telefone" required>
+                                <!-- input -->
+                                <i class="far fa-phone" style="color: #93278F;"></i>
+                            </div>
+                        </div>
+                            <?php
+                         }
+                        
+                        ?>
                         <div class="col-md-12">
                             <!-- start col -->
                             <div class="field input-field">
@@ -526,27 +513,10 @@ include("db.php");
                                 <!-- textarea -->
                             </div>
                         </div>
-                        <!-- end col -->
-                        <?php
-                        if (isset($_COOKIE["cliente"])) {
-                        ?>
+                       
                             <div class="btn-holder-contect">
                                 <button type="submit" name="enviar" style="background: #F0E738; color: #93278F;">Enviar</button>
-
                             </div>
-                        <?php
-                        } else {
-                        ?>
-                            <div class="btn-holder-contect">
-                                <a class="btn-profile" href="signin.php"> <em class="fa fa-lock" style="margin-right:5px"></em>Iniciar Sessão</a>
-
-                            </div>
-
-                        <?php
-                        }
-                        ?>
-
-
                     </form>
                     <!-- end form -->
                 </div>

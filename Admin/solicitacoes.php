@@ -278,7 +278,7 @@ $ascUser = mysqli_fetch_assoc($selUser);
                                            <tr>
                                            <td>Projeto - <?php echo $ascSoliGeral["titulo"]; ?></td>
                                             <td><?php echo $ascSoliGeral["nome"]; ?></td>
-                                            <td><?php echo $ascUsers["telefone"]; ?></td>
+                                            <td><?php echo $ascSoliGeral["telefone_empresa"]; ?></td>
                                             <td><?php echo $ascSoliGeral["nome_empresa"]; ?></td>
                                             <td><?php echo $ascSoliGeral["descricao"]; ?></td>
                                             <td>SIM</td>
