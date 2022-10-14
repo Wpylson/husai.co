@@ -263,6 +263,7 @@ $ascUser = mysqli_fetch_assoc($selUser);
                                     <th data-hide="all">Descriçao do Projeto</th>
                                     <th data-hide="all">Pontual</th>
                                     <th data-hide="all">Data</th>
+                                    <th data-hide="all" rowspan="2"></th>
                                     <th>Acção</th>
                                 </tr>
                                 </thead>
@@ -283,6 +284,7 @@ $ascUser = mysqli_fetch_assoc($selUser);
                                             <td><?php echo $ascSoliGeral["descricao"]; ?></td>
                                             <td>SIM</td>
                                             <td><?php echo $ascSoliGeral["data"]; ?></td>
+                                            <td>btn responder</td>
                                             <td><a href="#"><i class="fa fa-check text-navy"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="fa fa-times text-danger"></i></a></td>
                                             </tr>
                                            <?php 

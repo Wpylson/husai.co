@@ -9,7 +9,7 @@ if (!isset($_COOKIE["cliente"])) {
 <?php
 }
 $selCli = mysqli_query($conn, "SELECT * FROM user_geral WHERE email='$cliente' ");
-$numrow=mysqli_num_fields($selCli);
+$numrow = mysqli_num_fields($selCli);
 $ascCli = mysqli_fetch_assoc($selCli);
 ?>
 <!doctype html>
@@ -18,8 +18,10 @@ $ascCli = mysqli_fetch_assoc($selCli);
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bredh flat responsive HTML & WHMCS hosting and domains template">
-    <meta name="author" content="coodiv.net (nedjai mohamed)">
+    <meta name="description" content="Husai, Tecnologia & Inovações, hospedagen, criação de sites, iOs, android, Namibe, Luanda, Angola">
+    <meta name="Raúl Afonso, Walter Cabral Kahamba, Nedjai Mohamed(coodiv.net)" content="coodiv.net (nedjai mohamed),Husai Angola, Namibe">
+    <title>Husai | Perfil</title>
+    <link rel="icon" href="icone.png">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.min.css" rel="stylesheet">
     <link href="css/husai.css" rel="stylesheet">
@@ -178,8 +180,8 @@ $ascCli = mysqli_fetch_assoc($selCli);
                 </button>
                 <div class="collapse navbar-collapse navbar-offcanvas" id="offcanvas-menu-home" style="background: #93278F;">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item dropdown" onclick="location.href='index.php'">
-                            <a class="nav-link" href="index.php" role="button" id="header-first-drop-down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Início</a>
+                        <li class="nav-item dropdown " onclick="location.href='index.php'">
+                            <a class="nav-link" href="index.php" role="button" id="header-first-drop-down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Página Inicial</a>
                         </li>
 
                         <li class="nav-item megamenu dropdown">
@@ -190,7 +192,7 @@ $ascCli = mysqli_fetch_assoc($selCli);
                                         <a href="hosting.php">
                                             <i class="bredhicon-sun" style="background: #F0E738; color: #93278F;"></i>
                                             <h5>Hospedagem</h5>
-                                            <p>A hospedagem é um espaço no servidor que armazena todos os arquivos que compõem um site para deixá-lo acessível na internet.</p>
+                                            <!-- <p>A hospedagem é um espaço no servidor que armazena todos os arquivos que compõem um site para deixá-lo acessível na internet.</p> -->
                                         </a>
                                     </div>
 
@@ -198,7 +200,7 @@ $ascCli = mysqli_fetch_assoc($selCli);
                                         <a href="ssl.php">
                                             <i class="bredhicon-award-empty" style="background: #F0E738; color: #93278F;"></i>
                                             <h5>Certificado SSL</h5>
-                                            <p>Certificado SSL é um certificado digital que autentica a identidade de um site e possibilita uma conexão criptografada.</p>
+                                            <!-- <p>Certificado SSL é um certificado digital que autentica a identidade de um site e possibilita uma conexão criptografada.</p> -->
                                         </a>
                                     </div>
 
@@ -206,15 +208,21 @@ $ascCli = mysqli_fetch_assoc($selCli);
                                         <a href="websites.php">
                                             <i class="bredhicon-steering-wheel" style="background: #F0E738; color: #93278F;"></i>
                                             <h5>Criação de Site</h5>
-                                            <p> um site funciona como uma porta de entrada da sua empresa na internet, baseado neste conjunto de páginas que precisam de uma estrutura para ficar armazenada e de um nome de domínio.</p>
+                                            <!-- <p> um site funciona como uma porta de entrada da sua empresa na internet, baseado neste conjunto de páginas que precisam de uma estrutura para ficar armazenada e de um nome de domínio.</p> -->
                                         </a>
                                     </div>
-
+                                    <div class="p-2 bd-highlight">
+                                        <a href="criacao_app.php">
+                                            <i class="bredhicon-mobile" style="background: #F0E738; color: #93278F;"></i>
+                                            <h5>Criação de Aplicativos</h5>
+                                            <!-- <p> um site funciona como uma porta de entrada da sua empresa na internet, baseado neste conjunto de páginas que precisam de uma estrutura para ficar armazenada e de um nome de domínio.</p> -->
+                                        </a>
+                                    </div>
                                     <div class="p-2 bd-highlight">
                                         <a href="domains.php">
                                             <i class="bredhicon-headphones" style="background: #F0E738; color: #93278F;"></i>
                                             <h5>Domínios</h5>
-                                            <p>O domínio geralmente usa o nome da sua organização e um sufixo padrão da Internet, como minhaempresa.com ou universidadeestadual.edu.</p>
+                                            <!-- <p>O domínio geralmente usa o nome da sua organização e um sufixo padrão da Internet, como minhaempresa.com ou universidadeestadual.edu.</p> -->
                                         </a>
                                     </div>
 
@@ -232,29 +240,35 @@ $ascCli = mysqli_fetch_assoc($selCli);
                             </div>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="domains.php">Domínios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="nossoproduto.php">Nossos Produtos</a>
+                       
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" id="header-help-drop-down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Productos<span class="sr-only">(current)</span></a>
+                            <ul class="dropdown-menu coodiv-dropdown-header" aria-labelledby="header-help-drop-down">
+                            <li><a class="dropdown-item" href="bankya.php">Bankya</a></li>
+                                <li><a class="dropdown-item" href="enter.php">Enter</a></li>
+                            </ul>
                         </li>
 
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" role="button" id="header-help-drop-down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Suporte<span class="sr-only">(current)</span></a>
                             <ul class="dropdown-menu coodiv-dropdown-header" aria-labelledby="header-help-drop-down">
-                                <li><a class="dropdown-item" href="help-center.php">Centro de Ajuda</a></li>
+                            <li><a class="dropdown-item" href="about.php">Sobre</a></li>
                                 <li><a class="dropdown-item" href="contact.php">Contate-nos</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.php">Sobre</a>
-                        </li>
+                        
                         <?php
                         if (isset($_COOKIE["cliente"])) {
                         ?>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="clientarea.php">Minha Conta</a>
-                            </li>
+                        
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link" href="#" role="button" id="header-help-drop-down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Minha Conta<span class="sr-only">(current)</span></a>
+                            <ul class="dropdown-menu coodiv-dropdown-header" aria-labelledby="header-help-drop-down">
+                                <li><a class="dropdown-item" href="clientarea.php">Perfil</a></li>
+                                <li><a class="dropdown-item" href="signout.php">Sair</a></li>
+                            </ul>
+                        </li>
+                            
                         <?php
                         }
                         ?>
@@ -319,7 +333,7 @@ $ascCli = mysqli_fetch_assoc($selCli);
                         <h6 style="color: #93278F;">
                             <?php echo $ascCli["email"]; ?>
                         </h6>
-                        <p style="font-size: 10px;"><a href="clientarea.php" class="link-client-area active">Perfil do utilizador</a> | <a href="edit_cliente.php?id=<?php echo $ascCli["idUserGeral"]; ?>" class="link-client-area">Editar Informações</a> </p>
+                        <p style="font-size: 10px;"><a href="clientarea.php" class="link-client-area active">Perfil do utilizador</a> | <a href="edit_cliente.php" class="link-client-area">Editar Informações</a> </p>
                     </div>
                 </div>
                 <!-- <div class="col-md-2">
@@ -331,7 +345,7 @@ $ascCli = mysqli_fetch_assoc($selCli);
                         <div class="profile-head">
 
                             <?php
-                            
+
                             if ($numrow <= 8) {
                                 echo "$numrow";
                             ?>

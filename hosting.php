@@ -2,20 +2,21 @@
 include("db.php");
 ?>
 <!doctype html>
-<html lang="en">
+<html lang="pt-pt">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bredh flat responsive HTML & WHMCS hosting and domains template">
+    <meta name="description" content="Husai, Tecnologia & Inovações, hospedagen, dedicada,cPanel, criação de sites, iOs, android, Namibe, Luanda, Angola">
+    <meta name="Raúl Afonso, Walter Cabral Kahamba, Nedjai Mohamed(coodiv.net)" content="coodiv.net (nedjai mohamed),Husai Angola, Namibe">
     <meta name="author" content="coodiv.net (nedjai mohamed)">
-
+    <title>Husai | Hospedagem Dedicada</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- main css file -->
     <link href="css/main.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/husai.css">
+    <link rel="icon" href="icone.png">
 
 </head>
 
@@ -52,8 +53,8 @@ include("db.php");
                 </button>
                 <div class="collapse navbar-collapse navbar-offcanvas" id="offcanvas-menu-home" style="background: #93278F;">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item dropdown" onclick="location.href='index.php'">
-                            <a class="nav-link" href="index.php" role="button" id="header-first-drop-down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Início</a>
+                        <li class="nav-item dropdown " onclick="location.href='index.php'">
+                            <a class="nav-link" href="index.php" role="button" id="header-first-drop-down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Página Inicial</a>
                         </li>
 
                         <li class="nav-item megamenu dropdown">
@@ -64,7 +65,7 @@ include("db.php");
                                         <a href="hosting.php">
                                             <i class="bredhicon-sun" style="background: #F0E738; color: #93278F;"></i>
                                             <h5>Hospedagem</h5>
-                                            <p>A hospedagem é um espaço no servidor que armazena todos os arquivos que compõem um site para deixá-lo acessível na internet.</p>
+                                            <!-- <p>A hospedagem é um espaço no servidor que armazena todos os arquivos que compõem um site para deixá-lo acessível na internet.</p> -->
                                         </a>
                                     </div>
 
@@ -72,7 +73,7 @@ include("db.php");
                                         <a href="ssl.php">
                                             <i class="bredhicon-award-empty" style="background: #F0E738; color: #93278F;"></i>
                                             <h5>Certificado SSL</h5>
-                                            <p>Certificado SSL é um certificado digital que autentica a identidade de um site e possibilita uma conexão criptografada.</p>
+                                            <!-- <p>Certificado SSL é um certificado digital que autentica a identidade de um site e possibilita uma conexão criptografada.</p> -->
                                         </a>
                                     </div>
 
@@ -80,15 +81,21 @@ include("db.php");
                                         <a href="websites.php">
                                             <i class="bredhicon-steering-wheel" style="background: #F0E738; color: #93278F;"></i>
                                             <h5>Criação de Site</h5>
-                                            <p> um site funciona como uma porta de entrada da sua empresa na internet, baseado neste conjunto de páginas que precisam de uma estrutura para ficar armazenada e de um nome de domínio.</p>
+                                            <!-- <p> um site funciona como uma porta de entrada da sua empresa na internet, baseado neste conjunto de páginas que precisam de uma estrutura para ficar armazenada e de um nome de domínio.</p> -->
                                         </a>
                                     </div>
-
+                                    <div class="p-2 bd-highlight">
+                                        <a href="criacao_app.php">
+                                            <i class="bredhicon-mobile" style="background: #F0E738; color: #93278F;"></i>
+                                            <h5>Criação de Aplicativos</h5>
+                                            <!-- <p> um site funciona como uma porta de entrada da sua empresa na internet, baseado neste conjunto de páginas que precisam de uma estrutura para ficar armazenada e de um nome de domínio.</p> -->
+                                        </a>
+                                    </div>
                                     <div class="p-2 bd-highlight">
                                         <a href="domains.php">
                                             <i class="bredhicon-headphones" style="background: #F0E738; color: #93278F;"></i>
                                             <h5>Domínios</h5>
-                                            <p>O domínio geralmente usa o nome da sua organização e um sufixo padrão da Internet, como minhaempresa.com ou universidadeestadual.edu.</p>
+                                            <!-- <p>O domínio geralmente usa o nome da sua organização e um sufixo padrão da Internet, como minhaempresa.com ou universidadeestadual.edu.</p> -->
                                         </a>
                                     </div>
 
@@ -106,29 +113,35 @@ include("db.php");
                             </div>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="domains.php">Domínios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="nossoproduto.php">Nossos Produtos</a>
+                       
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" id="header-help-drop-down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Productos<span class="sr-only">(current)</span></a>
+                            <ul class="dropdown-menu coodiv-dropdown-header" aria-labelledby="header-help-drop-down">
+                            <li><a class="dropdown-item" href="bankya.php">Bankya</a></li>
+                                <li><a class="dropdown-item" href="enter.php">Enter</a></li>
+                            </ul>
                         </li>
 
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" role="button" id="header-help-drop-down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Suporte<span class="sr-only">(current)</span></a>
                             <ul class="dropdown-menu coodiv-dropdown-header" aria-labelledby="header-help-drop-down">
-                                <li><a class="dropdown-item" href="help-center.php">Centro de Ajuda</a></li>
+                            <li><a class="dropdown-item" href="about.php">Sobre</a></li>
                                 <li><a class="dropdown-item" href="contact.php">Contate-nos</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.php">Sobre</a>
-                        </li>
+                        
                         <?php
                         if (isset($_COOKIE["cliente"])) {
                         ?>
-                            <li class="nav-item">
-                                <a class="nav-link" href="clientarea.php">Minha Conta</a>
-                            </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" id="header-help-drop-down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Minha Conta<span class="sr-only">(current)</span></a>
+                            <ul class="dropdown-menu coodiv-dropdown-header" aria-labelledby="header-help-drop-down">
+                                <li><a class="dropdown-item" href="clientarea.php">Perfil</a></li>
+                                <li><a class="dropdown-item" href="signout.php">Sair</a></li>
+                            </ul>
+                        </li>
+                            
                         <?php
                         }
                         ?>
@@ -173,17 +186,15 @@ include("db.php");
                 </ul>
             </div>
         </nav>
+
         <div class="mt-auto header-top-height">
             <div class="mt-auto">
                 <div class="container mb-auto">
                     <div class="row"  style="margin-top:150px;">
                        <div class="mt-auto header-top-height"></div>
                         <div class="col-md-7">
-                            <h3 class="mt-3 main-header-text-title"><span></span>seguro e garantido</h3>
-
-                            <p class="side-text-left-text" style="color:#fff">
-                                Criar o seu negócio online se tornou mais fácil e seguro com os nossos planos de hospedagem
-                            </p>
+                          
+                            <h3 class="mt-3 main-header-text-title"><span style="color: #f5f5f5;">seguro e garantido. Criar o seu negócio online se tornou mais fácil e seguro com os nossos planos de hospedagem</span>Hospedagem Compartilhada</h3>
                             <div class="altura-20"></div>
                         
                         </div>
@@ -196,7 +207,7 @@ include("db.php");
     </div>
     <section class="padding-40-0 position-relative">
         <div class="container">
-            <h5 class="title-default-coodiv-two">confira planos incríveis e faça seu pedido agora <span class="mr-tp-20">escolheu qual pacote é melhor para você.</span></h5>
+            <h5 class="title-default-coodiv-two">confira planos incríveis e faça seu pedido agora <span class="mr-tp-20">escolha qual pacote é melhor para você.</span></h5>
             <div class="row justify-content-center">
                 <div id="monthly-yearly-chenge" class=" style-two">
                     <a class="active monthly-price"> <span class="change-box-text">Plano Mensal</span> <span class="change-box"></span></a>
