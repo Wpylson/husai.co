@@ -14,7 +14,6 @@ include("db.php");
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- main css file -->
     <link href="css/main.min.css" rel="stylesheet">
-
     <link rel="stylesheet" href="css/husai.css">
     <link rel="icon" href="icone.png">
 
@@ -63,7 +62,7 @@ include("db.php");
                                 <div class="d-flex justify-content-center bd-highlight mb-3 megamenu-items-header">
                                     <div class="p-2 bd-highlight">
                                         <a href="hosting.php">
-                                            <i class="bredhicon-sun" style="background: #F0E738; color: #93278F;"></i>
+                                        <img src="img/svgs/dedicated.svg" alt="" width="75px" height="75px" />
                                             <h5>Hospedagem</h5>
                                             <!-- <p>A hospedagem é um espaço no servidor que armazena todos os arquivos que compõem um site para deixá-lo acessível na internet.</p> -->
                                         </a>
@@ -207,7 +206,7 @@ include("db.php");
     </div>
     <section class="padding-40-0 position-relative">
         <div class="container">
-            <h5 class="title-default-coodiv-two">confira planos incríveis e faça seu pedido agora <span class="mr-tp-20">escolha qual pacote é melhor para você.</span></h5>
+            <h5 class="title-default-coodiv-two">confira planos de<strong> Hospedagem</strong> incríveis e faça seu pedido agora <span class="mr-tp-20">escolha qual pacote é melhor para você.</span></h5>
             <div class="row justify-content-center">
                 <div id="monthly-yearly-chenge" class=" style-two">
                     <a class="active monthly-price"> <span class="change-box-text">Plano Mensal</span> <span class="change-box"></span></a>
