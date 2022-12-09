@@ -80,7 +80,7 @@ include("db.php");
                                 <div class="d-flex justify-content-center bd-highlight mb-3 megamenu-items-header">
                                     <div class="p-2 bd-highlight">
                                         <a href="hosting.php">
-                                        <img src="img/svgs/dedicated.svg" alt="" width="75px" height="75px" />
+                                        <i class="bredhicon-cloud" style="background: #F0E738; color: #93278F;"></i>
                                             <h5>Hospedagem</h5>
                                             <!-- <p>A hospedagem é um espaço no servidor que armazena todos os arquivos que compõem um site para deixá-lo acessível na internet.</p> -->
                                         </a>
@@ -95,7 +95,7 @@ include("db.php");
                                     </div>
 
                                     <div class="p-2 bd-highlight">
-                                        <a href="websites.php">
+                                        <a href="criacao_site.php">
                                             <i class="bredhicon-steering-wheel" style="background: #F0E738; color: #93278F;"></i>
                                             <h5>Criação de Site</h5>
                                             <!-- <p> um site funciona como uma porta de entrada da sua empresa na internet, baseado neste conjunto de páginas que precisam de uma estrutura para ficar armazenada e de um nome de domínio.</p> -->
@@ -355,7 +355,8 @@ include("db.php");
                 </div>
 
                 <div class="col-md-7 about-us-img-section">
-                    <img src="img/husai/pedido_site/solucoes.png" alt="" />
+                <img src="img/husai/pedido_site/solucoes.png" alt="" />
+                   
                 </div>
 
             </div>
@@ -367,7 +368,7 @@ include("db.php");
             <div class="row justify-content-between">
 
                 <div class="col-md-7 about-us-img-section">
-                    <img src="img/husai/pedido_site/solucoes.png" alt="" />
+                <img src="bluiding_banner_img.png" alt="" />
                 </div>
 
                 <div class="col-md-4 side-text-right-container">
