@@ -113,7 +113,7 @@
 
 
                         <li>
-                            <a href="../signin.php">
+                            <a href="controllers/logout.php">
                                 <i class="fa fa-sign-out"></i> Sair
                             </a>
                         </li>

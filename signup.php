@@ -107,7 +107,7 @@ if (isset($_COOKIE["cliente"])) {
                         </div>
                         <p class="text-white-muted" style="margin-bottom:5px;">
                             <input type="checkbox" name="termos" value="Sim" id="" required>
-                            Aceitar os <a href="signup.php">Termos de uso</a>
+                            Aceitar os <a href="termos_politicas.php">Termos de uso</a>
                         </p>
                         <button class="btn btn-entrar shadow-2 mb-4">Registar-se agora</button>
                     </form>

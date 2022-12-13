@@ -12,7 +12,7 @@
                                 <li><a class="dropdown-item" href="profile.php">Perfil</a></li>
                                 <li><a class="dropdown-item" href="mailbox.php">E-mail</a></li>
                                 <li class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="../signin.php">Sair</a></li>
+                                <li><a class="dropdown-item" href="../signout.php">Sair</a></li>
                             </ul>
                         </div>
                         <div class="logo-element">

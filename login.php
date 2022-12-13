@@ -8,12 +8,15 @@ if (mysqli_num_rows($selUser)>=1) {
     ?>
     <script type="text/javascript">window.location.replace(" Admin/index.php");</script>
     <?php
-	setcookie("userHusai",$email);
+
+    $validade = strtotime("+1 month");
+	setcookie("userHusai", $email,$validade,"/","",false,true);
 }elseif (mysqli_num_rows($selGeral)>=1) {
     ?>
     <script type="text/javascript">window.location.replace("index.php");</script>
     <?php
-	setcookie("cliente",$email);
+    $validade = strtotime("+1 month");
+	setcookie("cliente", $email,$validade,"/","",false,true);
 }
 else{
 	?>

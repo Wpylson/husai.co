@@ -193,7 +193,7 @@
                             <a class="nav-link" href="#" role="button" id="header-help-drop-down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Minha Conta<span class="sr-only">(current)</span></a>
                             <ul class="dropdown-menu coodiv-dropdown-header" aria-labelledby="header-help-drop-down">
                                 <li><a class="dropdown-item" href="clientarea.php">Perfil</a></li>
-                                <li><a class="dropdown-item" href="signout.php">Sair</a></li>
+                                <li><a class="dropdown-item" href="logout.php">Sair</a></li>
                             </ul>
                         </li>
                             
