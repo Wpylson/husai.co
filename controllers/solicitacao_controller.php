@@ -14,16 +14,15 @@ if (isset($_COOKIE["cliente"])) {
         $email = $rows["email"];
         $telefone=$rows["telefone"];
 
-        $empresa = $_POST["empresa"];
-        $tipoEmpresa = $_POST["tipo_empresa"];
+
         $titulo = $_POST["titulo"];
         $tipo_site = $_POST['tipo_site'];
         $descricao = $_POST["descricao"];
 
-        $insert = "INSERT INTO `solicitacoes`( `nome`, `email_empresa`,`telefone_empresa`, `idUserGeral`,
-     `nome_empresa`, `tipo_empresa`, `titulo`, `tipo_site`, `descricao` ) 
-    VALUES ('$nome','$email','$telefone','$idUsuario','$empresa','$tipoEmpresa','$titulo','$tipo_site','$descricao')";
-
+        $insert = "INSERT INTO`solicitacao`(`idUserGeral`, `nome_cliente`, `email_cliente`, 
+        `telefone_cliente`, `titulo_projecto`, `descricao_projecto`, `idTipoProjecto`, `visto`, `tipo_cliente`)
+    VALUES ('$idUsuario','$nome','$email','$telefone','$titulo','$descricao','$tipo_site','Não','1')";
+        
         $cogVery = mysqli_query($conn, $insert);
         if ($cogVery) {
                 $_SESSION['solicitacao'] = ' <div class="alert alert-success" role="alert">
@@ -31,7 +30,7 @@ if (isset($_COOKIE["cliente"])) {
      </div>';
 ?>
                 <script type="text/javascript">
-                        window.location.replace("../pedido_site.php");
+                        window.location.replace("../solicitacao.php");
                 </script>
 
         <?php
@@ -41,7 +40,7 @@ if (isset($_COOKIE["cliente"])) {
      </div>';
         ?>
                 <script type="text/javascript">
-                        window.location.replace("../pedido_site.php");
+                        window.location.replace("../solicitacao.php");
                 </script>
         <?php
         }
@@ -49,15 +48,13 @@ if (isset($_COOKIE["cliente"])) {
         $nome = $_POST["nome"];
         $email = $_POST["email"];
         $telefone=$_POST["telefone"];
-        $empresa = $_POST["empresa"];
-        $tipoEmpresa = $_POST["tipo_empresa"];
         $titulo = $_POST["titulo"];
         $tipo_site = $_POST['tipo_site'];
         $descricao = $_POST["descricao"];
 
-        $insert = "INSERT INTO `solicitacoes`( `nome`, `email_empresa`,`telefone_empresa`,
-     `nome_empresa`, `tipo_empresa`, `titulo`, `tipo_site`, `descricao` ) 
-    VALUES ('$nome','$email','$telefone','$empresa','$tipoEmpresa','$titulo','$tipo_site','$descricao')";
+        $insert = "INSERT INTO`solicitacao`( `nome_cliente`, `email_cliente`, 
+        `telefone_cliente`, `titulo_projecto`, `descricao_projecto`, `idTipoProjecto`, `visto`, `tipo_cliente`)
+    VALUES ('$nome','$email','$telefone','$titulo','$descricao','$tipo_site','Não','2')";
 
         $cogVery = mysqli_query($conn, $insert);
         if ($cogVery) {
@@ -66,7 +63,7 @@ if (isset($_COOKIE["cliente"])) {
      </div>';
         ?>
                 <script type="text/javascript">
-                        window.location.replace("../pedido_site.php");
+                        window.location.replace("../solicitacao.php");
                 </script>
 
         <?php
@@ -76,7 +73,7 @@ if (isset($_COOKIE["cliente"])) {
      </div>';
         ?>
                 <script type="text/javascript">
-                        window.location.replace("../pedido_site.php");
+                        window.location.replace("../solicitacao.php");
                 </script>
 <?php
         }

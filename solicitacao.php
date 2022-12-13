@@ -10,7 +10,7 @@ include("db.php");
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Husai, Tecnologia & Inovações, hospedagen, criação de sites, iOs, android, Namibe, Luanda, Angola">
     <meta name="Raúl Afonso, Walter Cabral Kahamba, Nedjai Mohamed(coodiv.net)" content="coodiv.net (nedjai mohamed),Husai Angola, Namibe">
-    <title>Husai | Criação de Sites</title>
+    <title>Husai | Solicitação</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- main css file -->
     <link href="css/main.min.css" rel="stylesheet">
@@ -40,9 +40,9 @@ include("db.php");
     </div>
     <!-- end modal video -->
 
-    <div class="preloader"> 
+    <div class="preloader">
         <!-- start preloader -->
-         <div class="preloader-container">
+        <div class="preloader-container">
             <img src="icone.png" width="50">
             <br><br>
             <span>Carregando...</span>
@@ -74,13 +74,13 @@ include("db.php");
                             <a class="nav-link" href="index.php" role="button" id="header-first-drop-down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Página Inicial</a>
                         </li>
 
-                        <li class="nav-item megamenu dropdown active">
+                        <li class="nav-item megamenu dropdown ">
                             <a class="nav-link" href="#" role="button" id="services-megamenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Serviços <span class="megamenu-toggle"></span></a>
                             <div class="dropdown-menu coodiv-dropdown-megamnu default-megamenu" aria-labelledby="services-megamenu">
                                 <div class="d-flex justify-content-center bd-highlight mb-3 megamenu-items-header">
                                     <div class="p-2 bd-highlight">
                                         <a href="hosting.php">
-                                        <i class="bredhicon-cloud" style="background: #F0E738; color: #93278F;"></i>
+                                            <i class="bredhicon-cloud" style="background: #F0E738; color: #93278F;"></i>
                                             <h5>Hospedagem</h5>
                                             <!-- <p>A hospedagem é um espaço no servidor que armazena todos os arquivos que compõem um site para deixá-lo acessível na internet.</p> -->
                                         </a>
@@ -130,35 +130,35 @@ include("db.php");
                             </div>
                         </li>
 
-                       
+
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" role="button" id="header-help-drop-down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Productos<span class="sr-only">(current)</span></a>
                             <ul class="dropdown-menu coodiv-dropdown-header" aria-labelledby="header-help-drop-down">
-                            <li><a class="dropdown-item" href="bankya.php">Bankya</a></li>
+                                <li><a class="dropdown-item" href="bankya.php">Bankya</a></li>
                                 <li><a class="dropdown-item" href="enter.php">Enter</a></li>
                             </ul>
                         </li>
 
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown active">
                             <a class="nav-link" href="#" role="button" id="header-help-drop-down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Suporte<span class="sr-only">(current)</span></a>
                             <ul class="dropdown-menu coodiv-dropdown-header" aria-labelledby="header-help-drop-down">
-                            <li><a class="dropdown-item" href="about.php">Sobre</a></li>
+                                <li><a class="dropdown-item" href="about.php">Sobre</a></li>
                                 <li><a class="dropdown-item" href="contact.php">Contate-nos</a></li>
                             </ul>
                         </li>
-                        
+
                         <?php
                         if (isset($_COOKIE["cliente"])) {
                         ?>
-                        
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" role="button" id="header-help-drop-down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Minha Conta<span class="sr-only">(current)</span></a>
-                            <ul class="dropdown-menu coodiv-dropdown-header" aria-labelledby="header-help-drop-down">
-                                <li><a class="dropdown-item" href="clientarea.php">Perfil</a></li>
-                                <li><a class="dropdown-item" href="signout.php">Sair</a></li>
-                            </ul>
-                        </li>
-                            
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" role="button" id="header-help-drop-down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Minha Conta<span class="sr-only">(current)</span></a>
+                                <ul class="dropdown-menu coodiv-dropdown-header" aria-labelledby="header-help-drop-down">
+                                    <li><a class="dropdown-item" href="clientarea.php">Perfil</a></li>
+                                    <li><a class="dropdown-item" href="signout.php">Sair</a></li>
+                                </ul>
+                            </li>
+
                         <?php
                         }
                         ?>
@@ -207,11 +207,11 @@ include("db.php");
         <main class="container mb-auto">
             <div class="row">
                 <div class="col-md-5 text-center">
-                    <h3 class="mt-3 title-header">Criação de Sites</h3>
+                    <h3 class="mt-3 title-header">Solicitaçõe de Projectos</h3>
                     <p class="side-text-center-text" style="color:#fff">
-                        A <strong>HUSAI</strong> vai criar um site incrível para sua empresa. Trabalhamos com um equipa especilaizada
-                        em desenvolvimento de sistemas web para o seu site tenha um visual incrível e tecnologias
-                        avançadas para fazer crescer o seu negócio através da internet.
+                        A <strong>HUSAI</strong> projectos que irão impulsionar o seu negócio. Desde sites, lojas online, apps (iOS e Android), sistemas de gestão e muito mais.
+                        Isso tudo acompanhado com uma equipa de especialistas inteiramente dedicados para ti.
+
                     </p>
                     <div id="" class="mr-tp-20 custom-change">
                         <a class="log-btn btn-fale-connosco" href="#solicitacao"><em class="fa fa-phone" style="margin-right:5px"></em>Fale connosco </a>
@@ -230,171 +230,153 @@ include("db.php");
 
     <div id="mobile-form-contact-height"></div>
 
-    <section class="padding-20-0 position-relative">
-
+    <section class="/*padding-0-100*/ position-relative mr-tp-30" id="solicitacao" style="padding: 0px 0px 40px 0px;">
         <div class="container">
-            <h5 class="title-default-coodiv-two mr-tp-30" style="text-transform: none;"><strong style="text-transform:capitalize;">Tudo o que voçê precisa</strong> para tornar o seu negócio real na internet:</h5>
-            <div class="row justify-content-start second-pricing-table-container mr-tp-30">
-
-                <div class="col-md-4" style="text-align: center ;" id="">
-
-                    <div class="second-pricing-table">
-                        <img src="img/husai/pedido_site/manutencao.png" alt="" style="height: 50%;width:80% ;">
-
-                        <h5 style="text-transform: uppercase;"><strong>Domínios</strong></h5>
-                        <p>Garanta o seu nome na Internet e tenha um endereço personalizado:
-                        </p>
-                        <br>
-                        <p>www.husai.co</p>
-
-                        <a class="second-pricing-table-button" href="#" style="background: #93278F; color: #fff; border: none;">Ver planos agora</a>
-                    </div>
-                </div>
-
-                <div class="col-md-4" style="text-align: center ;" id="">
-
-                    <div class="second-pricing-table">
-                        <img src="img/husai/ilustracao/ilu2.png" alt="" style="height: 50%;width:80% ;">
-
-                        <h5 style="text-transform: uppercase;"><strong>E-MAIL CORPORATIVO</strong></h5>
-                        <p>Endereço de e-mail únicos suasempresas@suaempresa-sa.com para quem deseja se comunicar para negócios.</p>
-
-                        <a class="second-pricing-table-button" href="#" style="background: #93278F; color: #fff; border: none;">Ver planos agora</a>
-                    </div>
-                </div>
-
-                <div class="col-md-4" style="text-align: center ;" id="">
-
-                    <div class="second-pricing-table">
-                        <img src="img/husai/ilustracao/ilu3.png" alt="" style="height: 50%;width:80% ;">
-
-                        <h5 style="text-transform: uppercase;"><strong>SEGURANÇA</strong></h5>
-                        <p>Automatizção de Marketing com a Husai, serviço gerenciado pela Husai para melhorar a comunicação e aumentar vendas</p>
-
-                        <a class="second-pricing-table-button" href="#" style="background: #93278F; color: #fff; border: none;">Ver planos agora</a>
-                    </div>
-                </div>
-
-                <div class="col-md-4" style="text-align: center ;" id="">
-
-                    <div class="second-pricing-table">
-                        <img src="img/husai/ilustracao/ilu3.png" alt="" style="height: 50%;width:80% ;">
-
-                        <h5 style="text-transform: uppercase;"><strong>Hospedagem de site</strong></h5>
-                        <p>Automatizção de Marketing com a Husai, serviço gerenciado pela Husai para melhorar a comunicação e aumentar vendas</p>
-
-                        <a class="second-pricing-table-button" href="#" style="background: #93278F; color: #fff; border: none;">Ver planos agora</a>
-                    </div>
-                </div>
-
-                <div class="col-md-4" style="text-align: center ;" id="">
-
-                    <div class="second-pricing-table">
-                        <img src="img/husai/ilustracao/ilu3.png" alt="" style="height: 50%;width:80% ;">
-
-                        <h5 style="text-transform: uppercase;"><strong>Criação de Site</strong></h5>
-                        <p>Automatizção de Marketing com a Husai, serviço gerenciado pela Husai para melhorar a comunicação e aumentar vendas</p>
-
-                        <a class="second-pricing-table-button" href="#" style="background: #93278F; color: #fff; border: none;">Ver planos agora</a>
-                    </div>
-                </div>
-
-                <div class="col-md-4" style="text-align: center ;" id="">
-
-                    <div class="second-pricing-table">
-                        <img src="img/husai/ilustracao/ilu3.png" alt="" style="height: 50%;width:80% ;">
-
-                        <h5 style="text-transform: uppercase;"><strong>Manunteção de Site</strong></h5>
-                        <p>Automatizção de Marketing com a Husai, serviço gerenciado pela Husai para melhorar a comunicação e aumentar vendas</p>
-
-                        <a class="second-pricing-table-button" href="#" style="background: #93278F; color: #fff; border: none;">Ver planos agora</a>
-                    </div>
-                </div>
-
-
-
-
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </section>
-
-    <div id="coodiv-header" class="d-flex mx-auto flex-column  moon-edition">
-        <div class="bg_overlay_header">
-            <img src="fundo.png" alt="img-bg">
-        </div>
-        <div class="altura-50"></div>
-        <main class="container mb-auto">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <h5 class="banner-title-setion text-center">CRIAMOS O SEU SITE PARA VOCÊ TER BONS <strong>Resultados</strong> Na Internet!</h5>
-                </div>
-                <div class="col-md-8">
-                    <p class="banner-text-center text-center">Vamos criar um <strong>site</strong> único para o seu negócio. Design avançado, optimizado para o Google e com integrações para o Facebook, Intagram e Whatsapp.</p>
-                </div>
-            </div>
-        </main>
-        <div class="altura-40"></div>
-
-    </div>
-
-    <section class="padding-0-100 position-relative mr-tp-30">
-        <div class="container">
+            <h5 class="title-default-coodiv-two mr-tp-30" style="text-transform: none;"><strong style="text-transform:capitalize;">Tudo o que voçê precisa</strong> para tornar o seu negócio real na internet</h5>
             <div class="row justify-content-between">
+                <div class="col-md-5 about-us-img-section">
+                    <img src="img/husai/ilustracao/ilu3.png" alt="">
+                    <div class="mob-display-none">
+                        <h5 class="immediate-help-center-title">Precisa de um atendimento <br>imediato ?</h5>
+                        <p class="immediate-help-center-text">nossa equipe de suporte esta aqui para você 24/7</p>
 
-                <div class="col-md-4 side-text-right-container">
-                    <h2 class="side-text-right-title">Seu site com bons <strong>Resultados</strong></h2>
-                    <p class="side-text-right-text">
-                        Site com design personalizado, otimizado para Google, resposivo e com áreas de contao inteligente.
-                        <br>
-                        <br>
-                        Fácil de econtrar e com os melhores domínios, certificados SSL e muito mais.
-                        Fácil de econtrar e com os melhores domínios, certificados SSL e muito mais.
-                        Fácil de econtrar e com os melhores domínios, certificados SSL e muito mais.
-                    </p>
-
-                </div>
-
-                <div class="col-md-7 about-us-img-section">
-                <img src="img/husai/pedido_site/solucoes.png" alt="" />
-                   
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="padding-0-100 position-relative mr-tp-30" style="background: #f2f7fb;">
-        <div class="container">
-            <div class="row justify-content-between">
-
-                <div class="col-md-7 about-us-img-section">
-                <img src="bluiding_banner_img.png" alt="" />
-                </div>
-
-                <div class="col-md-4 side-text-right-container">
-                    <h2 class="side-text-right-title">Tenha o seu site apartir de <strong>AOA 100.000,00 </strong></h2>
-                    <p class="side-text-right-text" style="margin-bottom: 5px;">
-                        Com as seguintes páginas:
-                    </p>
-                    <ul class="lista">
-                        <li><em class="fa fa-check" style="color:#93278F"></em> <span class="">Página Inicial</span></li>
-                        <li><em class="fa fa-check" style="color:#93278F"></em> <span class="">Quem Somos/Sobre</span></li>
-                        <li><em class="fa fa-check" style="color:#93278F"></em> <span class="">Serviços/ Produtos</span></li>
-                        <li><em class="fa fa-check" style="color:#93278F"></em> <span class="">Contacta-nos</span></li>
-                        <li><em class="fa fa-check" style="color:#93278F"></em> <span class="">Blogue</span></li>
-                        <p class="side-text-right-text" style="font-size:12px;margin-bottom: 2px;">Adicionais como:</p>
-                        <li><em class="fa fa-check" style="color:#93278F"></em> <span class="">Plugins: Facebook, WhatsApp, Instagram</span></li>
-                        <li><em class="fa fa-check" style="color:#93278F"></em> <span class="">Mapa</span></li>
-                    </ul>
-                    <div style="text-align:center;">
-                        <a class="second-pricing-table-button" href="#" style="background: #93278F; color: #fff; border: none;">Entre em contacto</a>
+                        <a class="immediate-help-center-link" href="#">+244 932 671 519</a>
+                        <a class="immediate-help-center-link" href="#">suporte@husai.co</a>
                     </div>
+                </div>
+                <div class="col-md-7">
+                    <?php
+                    if (isset($_SESSION['solicitacao'])) {
+                        echo $_SESSION['solicitacao'];
+                        unset($_SESSION['solicitacao']);
+                    }
 
+                    if (isset($_SESSION['erro_solicitacao'])) {
+                        echo $_SESSION['erro_solicitacao'];
+                        unset($_SESSION['erro_solicitacao']);
+                    }
+                    ?>
+                    <form class="row form-contain-home contact-page-form-send" method="POST" action="controllers/solicitacao_controller.php">
+                        <!-- start form -->
+                        <h5>Faça a sua solicitação <span>diz-nos o que prentende e teremos o prazer em ajuda-lo</span></h5>
+                        <div id="form-messages"></div>
+                        <!-- form message -->
+
+                        <?php
+                        if (isset($_COOKIE["cliente"])) {
+                        } else {
+                        ?>
+                            <div class="col-md-12">
+                                <!-- start col -->
+                                <div class="field input-field">
+                                    <input class="form-contain-home-input" type="text" id="name" name="nome" placeholder="escreva seu nome" required>
+                                    <!-- input -->
+                                    <i class="fas fa-user" style="color: #93278F;"></i>
+                                </div>
+                            </div>
+                            <!-- end col -->
+
+                            <div class="col-md-12">
+                                <!-- start col -->
+                                <div class="field input-field">
+                                    <input class="form-contain-home-input" type="email" id="email" name="email" placeholder="escreve seu email" required>
+                                    <!-- input -->
+                                    <i class="far fa-envelope" style="color: #93278F;"></i>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <!-- start col -->
+                                <div class="field input-field">
+                                    <input class="form-contain-home-input" type="text" id="telefone" name="telefone" placeholder="escreve seu telefone" required>
+                                    <!-- input -->
+                                    <i class="far fa-phone" style="color: #93278F;"></i>
+                                </div>
+                            </div>
+                        <?php
+                        }
+
+                        ?>
+
+                        <div class="col-md-12">
+                            <!-- start col -->
+                            <div class="field input-field">
+                                <input class="form-contain-home-input" type="text" id="titulo" name="titulo" placeholder="escreva o  título para o seu projecto" required>
+                                <!-- input -->
+                                <i class="far fa-home" style="color: #93278F;"></i>
+                            </div>
+                        </div>
+                        <!-- end col -->
+                        <div class="col-md-12">
+                            <!-- start col -->
+                            <div class="field input-field">
+                                <select class="select-input" id="tipo_site" name="tipo_site" required>
+                                <option value="">seleciona o tipo projecto</option>
+                                    <?php
+                                    $sql_tipo_projecto = mysqli_query($conn, "SELECT * FROM `tipo_projecto`");
+                                    $count_tipo_projecto = mysqli_num_rows($sql_tipo_projecto);
+                                    if ($count_tipo_projecto > 0) {
+                                        while ($row = mysqli_fetch_assoc($sql_tipo_projecto)) {
+                                            $idTipoProjecto = $row['idTipoProjecto'];
+                                            $descricao = $row['descricaoTipoProjecto'];
+                                    ?>
+                                           
+                                            <option value="<?php echo $idTipoProjecto; ?>"><?php echo $descricao; ?></option>
+                                        <?php
+                                        }
+                                    } else {
+                                        ?>
+                                        <option value="">Tipo de projectos indisponíveis</option>
+                                    <?php
+                                    }
+                                    ?>
+
+                                </select>
+                                <!-- input -->
+                                <i class="far fa-list" style="color: #93278F;"></i>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <!-- start col -->
+                            <div class="field input-field">
+                                <textarea class="form-contain-home-input" id="message" name="descricao" placeholder="resumidamente, diga-nos mais detalhes sobre o seu projecto." required></textarea>
+                                <!-- textarea -->
+                            </div>
+                        </div>
+                        <!-- end col -->
+
+                        <div class="btn-holder-contect">
+                            <button type="submit" name="enviar" style="background: #F0E738; color: #93278F;">Enviar</button>
+
+                        </div>
+
+                    </form>
+                    <!-- end form -->
                 </div>
 
             </div>
+
+
         </div>
     </section>
+
+    <!-- 
+    <section class="footer-section-banner" style="background: #F0E738;">
+       <div class="container">
+       <div class=" row free-trial-footer-banner">
+        <div class="col-md-8 text-center">
+                    <h3 class="mt-3 title-header">Hospedagens de Sites</h3>
+                    <h3 class="" style="color:#fff ;font-size: 30px;font-weight: normal;">Para pequenos e grandes negócios</h3>
+                    
+                    <div id="" class="mr-tp-50 custom-change">
+                        <a class="log-btn btn-fale-connosco" href="#" >VER TODOS PLANOS </a>
+                    </div>
+                </div>
+        </div>
+
+       </div>
+    </section> -->
 
     <section class="footer-section-banner" style="background: #F0E738;">
         <div class="container">

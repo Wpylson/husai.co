@@ -9,6 +9,7 @@ $ascUser = mysqli_fetch_assoc($selUser);
 $idInvo = $_GET["idInvo"];
 $selCart = mysqli_query($conn, "SELECT * FROM carrinhofeito WHERE id='$idInvo' ");
 $ascSel = mysqli_fetch_assoc($selCart);
+$idCart = $ascSel['id'];
 $user = $ascSel["user"];
 $selUserCli = mysqli_query($conn, "SELECT * FROM user_geral WHERE email='$user' ");
 $ascUserCli = mysqli_fetch_assoc($selUserCli);
@@ -401,6 +402,7 @@ $ascUserCli = mysqli_fetch_assoc($selUserCli);
                         if ($ascSel["estado"] == "nao") {
                         ?>
                             <form method="POST" action="validar.php">
+                                <input type="hidden" name="idCart" value="<?php echo $idCart; ?>" />
                                 <button class="btn btn-primary" name="validar"><i class="fa fa-dollar"></i> Validar Pagamento</button>
                             </form>
                         <?php

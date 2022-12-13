@@ -629,7 +629,7 @@ if (isset($_POST["enviar"])) {
             <div class="totals-item">
               <label>Subtotal</label>
               <?php
-              $soma =  mysqli_query($conn, "SELECT sum(preco) FROM carrinho WHERE usuario ='$cliente' ");
+              $soma =  mysqli_query($conn, "SELECT sum(preco) FROM carrinho WHERE usuario ='$cliente' and estado='nao' ");
               $linhas = mysqli_num_rows($soma);
               while ($linhas = mysqli_fetch_array($soma)) {
                 $li = ($linhas['sum(preco)']);
