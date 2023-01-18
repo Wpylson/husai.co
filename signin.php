@@ -23,7 +23,7 @@ if (isset($_GET["erro"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Bredh flat responsive HTML & WHMCS hosting and domains template">
     <meta name="author" content="coodiv.net (nedjai mohamed)">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="icone.png">
     <title>bredh | signin page</title>
 
     <!-- Bootstrap core CSS -->
@@ -35,7 +35,7 @@ if (isset($_GET["erro"])) {
     <link rel="stylesheet" href="css/husai.css">
 
 </head>
-
+          
 <body>
     <!-- start body -->
 

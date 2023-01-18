@@ -254,7 +254,6 @@ $ascUser = mysqli_fetch_assoc($selUser);
                         <th>Cliente</th>
                         <th>E-mail</th>
                         <th>Telefone</th>
-                        <th>IdBankya</th>
                         <th>Estado</th>
                         <th>Opc</th>
                     </tr>
@@ -268,7 +267,6 @@ $ascUser = mysqli_fetch_assoc($selUser);
                             <td><img src="user.png" width="30"> <?php echo $ascPed["nome"]; ?></td>
                             <td><?php echo $ascPed["email"]; ?></td>
                             <td><?php echo $ascPed["telefone"]; ?></td>
-                            <td style="text-transform: uppercase;"><em class="fa fa-credit-card"></em> <?php echo $ascPed["idBankya"]; ?></td>
                             <td><span class="badge badge-primary">Ativo <em class="fa fa-check"></em></span></td>
                             <td class="center" style="text-align: center;"><a href="clientes.php?ver=<?php echo $ascPed["idUserGeral"]; ?>"><i class="fa fa-eye text-info"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="clientes.php?eliminar=<?php echo $ascPed["idUserGeral"]; ?>"><i class="fa fa-times text-danger"></i></a></td>
                            </tr>
